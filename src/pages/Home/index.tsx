@@ -4,6 +4,7 @@ import Map from 'components/Map'
 import Suggestions from 'components/Suggestions'
 import Order from 'components/Order'
 import HealthServices from 'components/HealthServices'
+import Vaccination from 'components/Vaccination'
 import './styles.scss'
 
 const Home: React.FC = () => {
@@ -16,10 +17,13 @@ const Home: React.FC = () => {
                 <Order />
             </section>
             <section>
-                <Map />
+                <Vaccination />
             </section>
             <section>
                 <HealthServices />
+            </section>
+            <section>
+                <Map />
             </section>
             <section>
                 <Suggestions />

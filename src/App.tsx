@@ -8,9 +8,7 @@ import Loading from 'components/Loading'
 import './App.scss'
 
 const Home = lazy(() => import('pages/Home'))
-const Events = lazy(() => import('pages/Events'))
 const News = lazy(() => import('pages/News'))
-const Services = lazy(() => import('pages/Services'))
 
 const App: React.FC = () => {
     return (

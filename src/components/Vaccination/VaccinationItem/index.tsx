@@ -4,12 +4,12 @@ import { faPhone } from '@fortawesome/free-solid-svg-icons'
 
 import './styles.scss'
 
-const Suggestions: React.FC = () => {
+const VaccinationItem: React.FC = () => {
     return (
         <li className='list-group-item list-group-item-action text-left'>
             <div className='d-flex w-100 justify-content-between'>
                 <h5 className='mb-1'>
-                    Hospital Regional{' '}
+                    Cesfam 1{' '}
                     <span className='float-right'>
                         <FontAwesomeIcon icon={faPhone} />
                     </span>
@@ -24,9 +24,9 @@ const Suggestions: React.FC = () => {
                     Av Libertador Bernardo O'Higgins 3065, Rancagua, O'Higgins
                 </a>
             </p>
-            {/* <small>Operando con normalidad</small> */}
+            <small>Lunes a Sábado de 08:00 a 20:00 hrs.</small>
         </li>
     )
 }
 
-export default Suggestions
+export default VaccinationItem
