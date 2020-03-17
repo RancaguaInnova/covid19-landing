@@ -23,10 +23,10 @@ const Home: React.FC = () => {
                 <HealthServices />
             </section>
             <section>
-                <Map />
+                <Suggestions />
             </section>
             <section>
-                <Suggestions />
+                <Map />
             </section>
         </div>
     )

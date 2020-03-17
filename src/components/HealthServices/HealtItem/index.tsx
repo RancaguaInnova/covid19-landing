@@ -24,7 +24,7 @@ const Suggestions: React.FC = () => {
                     Av Libertador Bernardo O'Higgins 3065, Rancagua, O'Higgins
                 </a>
             </p>
-            {/* <small>Operando con normalidad</small> */}
+            <small className='font-weight-bold'>Operando con Normalidad</small>
         </li>
     )
 }
