@@ -1,0 +1,26 @@
+@import 'variables';
+.card {
+    background-color: rgb(77,106,121);
+    box-shadow: 0 0 2px grey;
+    margin: .4rem 0rem;
+    color: white;
+}
+
+.card-title {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+
+.card-body h5 {
+    font-size: 1rem;
+}
+
+.card-body .date {
+    color: #ffeb3b
+}
+
+.card-body p {
+    font-size: .8rem;
+}

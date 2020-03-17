@@ -1,0 +1,35 @@
+@import 'variables';
+
+.header {
+    text-align: left;
+    /* display: flex;
+    align-items: center;
+    justify-content: left; */
+    background-color: white;
+    height: 6rem;
+    border-bottom: solid 1px grey;
+    margin-bottom: .5rem;
+}
+
+.header h1 {
+  /* text-align: left; */
+  /* margin-top: 1rem;
+  line-height: .5; */
+  margin-top: .5rem;
+  font-size: 1.5rem;
+}
+
+.header h2 {
+    font-weight: bold;
+    color: $mainColor;
+    font-size: 1.2rem;
+}
+
+.header img {
+    height: 70px;
+    margin: .5rem;
+   /*  position: relative;
+    right: 0.2rem;
+    
+    height: auto; */
+}

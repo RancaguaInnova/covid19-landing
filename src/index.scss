@@ -1,0 +1,29 @@
+@import 'variables';
+
+body {
+  margin: 0;
+  font-family: 'Futura';
+  src: url($futuraFontPath) format('woff');
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $bodyBackground;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* .container {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+ */
+
+ .info-txt {
+   color: grey;
+   padding: 8px
+ }

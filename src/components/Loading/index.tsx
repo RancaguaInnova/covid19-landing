@@ -1,8 +1,12 @@
 import React from 'react'
-import './styles.css'
+import './styles.scss'
 
-const Header: React.FC = () => {
-	return <div className='Header'>Hola soy el Header</div>
+const Loading: React.FC = () => {
+    return (
+        <div className='loading'>
+            <img src='assets/images/loading.gif' />
+        </div>
+    )
 }
 
-export default Header
+export default Loading
