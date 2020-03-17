@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import HealtItem from './HealtItem'
 
 import './styles.scss'
 
 const Suggestions: React.FC = () => {
+    const [ more, setMore ] = useState(false)
     return (
         <div className='suggestions'>
             <h3>Servicios de Salud</h3>
@@ -18,7 +19,14 @@ const Suggestions: React.FC = () => {
             </div>
 
             <div className='m-2'>
-                <button className='btn btn-block btn-outline-danger'>Mostrar todo</button>
+                <button
+                    className='btn btn-block btn-outline-danger'
+                    onClick={() => {
+                        setMore(!more)
+                    }}
+                >
+                    {more ? 'Mostrar menos' : 'Mostrar todos'}
+                </button>
             </div>
         </div>
     )

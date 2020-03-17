@@ -4,20 +4,38 @@ import './styles.scss'
 const Suggestions: React.FC = () => {
     return (
         <div className='suggestions'>
-            <h3>Recomendaciones</h3>
-            {/* <p className='info-txt'>Recomendaciones</p> */}
-            <ul className='list-group list-group-flush text-left'>
+            <h3 className='pb-2'>Recomendaciones</h3>
+            <h4>¿Cómo prevenirlo?</h4>
+            <div className='p-2'>
+                <iframe
+                    width='100%'
+                    height='315'
+                    src='https://www.youtube.com/embed/65AvdOQFfaI'
+                    frameBorder='0'
+                    allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
+                    allowFullScreen
+                />
+            </div>
+            <h4>¿Qué es? y Síntomas</h4>
+            <div className='p-2'>
+                <iframe
+                    width='100%'
+                    height='315'
+                    src='https://www.youtube.com/embed/8G-qSdZTCXA'
+                    frameBorder='0'
+                    allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
+                    allowFullScreen
+                />
+            </div>
+            <div className='m-2'>
                 <a
-                    className='list-group-item'
+                    className='btn btn-block btn-outline-danger'
                     href='http://www.cormun.cl/userfiles/file/publicidad/2020/PDFCoronavirus.pdf'
                     target='_blank'
                 >
-                    Medidas para prevenir el Coronavirus
+                    Ver medidas CORMUN
                 </a>
-                {/* <a className='list-group-item'>2. Cierre Recintos deportivos en toda la comuna</li>
-                <li className='list-group-item'>3. Otra medida adoptada por el municipio/gobierno</li> */}
-            </ul>
-            {/*  */}
+            </div>
         </div>
     )
 }

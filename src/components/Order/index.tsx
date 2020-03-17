@@ -1,18 +1,31 @@
 import React from 'react'
+/* import { FirestoreCollection } from 'react-firestore' */
+
 import './styles.scss'
 
 const Order: React.FC = () => {
     return (
         <div className='order'>
-            <h3>Medidas - Fase 4</h3>
-            <h5 className='hash'>#fase4rancagua</h5>
+            <h3 className='pb-2'>Medidas Adoptadas</h3>
+            {/*  <h5 className='hash'>#fase4rancagua</h5> */}
             <img className='img-fluid' src='/assets/images/plan-minsal.png' />
             <p className='info-txt'>Medidas adoptadas a nivel Comunal por Fase 4 de COVID-19</p>
 
-            <ul className='list-group list-group-flush text-left'>
-                <li className='list-group-item'>1. Cierre Establecimientos educacionales en toda la comuna</li>
-                <li className='list-group-item'>2. Cierre Recintos deportivos en toda la comuna</li>
-            </ul>
+            {/* <FirestoreCollection
+                path='actions'
+                render={({ isLoading, data }) => {
+                    console.log('isloading', isLoading)
+                    console.log('data', data)
+                    return (
+                        <ul className='list-group list-group-flush text-left'>
+                            <li className='list-group-item'>
+                                1. Cierre Establecimientos educacionales en toda la comuna
+                            </li>
+                            <li className='list-group-item'>2. Cierre Recintos deportivos en toda la comuna</li>
+                        </ul>
+                    )
+                }}
+            /> */}
             <div className='m-2'>
                 <a
                     className='btn btn-block btn-outline-danger'

@@ -7,7 +7,7 @@ const Header: React.FC = () => {
             <div className='row'>
                 <div className='col-8'>
                     <h1 className='text-center'>CONTINGENCIA</h1>
-                    <h2 className='text-center'>COVID-19</h2>
+                    <h2 className='text-center'>CORONAVIRUS</h2>
                 </div>
                 <div className='col-4'>
                     <img src='assets/images/logo_red.png' />
