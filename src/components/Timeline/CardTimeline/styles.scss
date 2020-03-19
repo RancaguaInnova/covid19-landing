@@ -1,6 +1,6 @@
 @import 'variables';
 .card {
-    background-color: $secondaryColor;
+    background-color: $mainColor;
     box-shadow: 0 0 2px grey;
     margin: .4rem 0rem;
     color: white;
@@ -23,7 +23,7 @@
 }
 
 .card-body .day {
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .card-body p {
@@ -42,4 +42,8 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.separator {
+    border-top: 1px solid white;
 }

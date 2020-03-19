@@ -25,6 +25,7 @@ const CardTimeline: React.FC<CardProps> = ({ card }) => {
                             </p>
                             <h5 className='font-weight-bold day'>{date.format('DD').toUpperCase()}</h5>
                             <h5 className='font-weight-bold month'>{date.format('MMMM').toUpperCase()}</h5>
+                            {/*  <hr className='separator' /> */}
                             <p className='font-weight-bold hour'>{date.format('HH:mm')}</p>
 
                             {/* {card.urlExterna.trim() !== '' && (

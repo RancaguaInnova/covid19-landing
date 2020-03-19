@@ -10,6 +10,7 @@ import './styles.scss'
 const HealthServices: React.FC = () => {
     const [ services, setServices ] = useState<any[]>([])
     const [ loading, setLoading ] = useState<boolean>(true)
+    const [ current, setCurrent ] = useState<any>(null)
     useEffect(() => {
         var collectionRef = null
         async function loadServices() {
@@ -28,17 +29,27 @@ const HealthServices: React.FC = () => {
         loadServices()
     })
 
+    const onSelectItem = (item: any) => {
+        const same = _isEqual(item, current)
+        setCurrent(same ? null : item)
+    }
+
     return (
         <div className='suggestions'>
             <h3 className='text-uppercase'>Centros de Salud de Rancagua</h3>
             {/* <p className='info-txt'>Listado de centros de salud de Rancagua</p> */}
-            <div className='pl-2 pr-2 services-box overflow-auto'>
+            <div className='pl-2 pr-2 services-box'>
                 {loading ? (
                     <Loading />
                 ) : (
                     <div className='list-group '>
                         {_sortBy(services.filter((s) => s.active), (s) => s.name).map((service, idx) => (
-                            <HealtItem service={service} key={idx} />
+                            <HealtItem
+                                service={service}
+                                key={idx}
+                                active={_isEqual(service, current)}
+                                onSelect={onSelectItem}
+                            />
                         ))}
                     </div>
                 )}
