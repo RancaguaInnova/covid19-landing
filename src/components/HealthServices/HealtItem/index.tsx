@@ -32,6 +32,7 @@ const Service: React.FC<ServiceProps> = ({ service, active = false, onSelect }) 
             </div>
             {active && (
                 <div className='list-body'>
+                    <hr />
                     <p className='mb-1'>
                         <a
                             href={`http://www.google.com/maps/place/${service.contactInformation.address
