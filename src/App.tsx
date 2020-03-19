@@ -1,5 +1,5 @@
 import React, { lazy, Suspense } from 'react'
-import '@firebase/firestore'
+
 /* import firebase from '@firebase/app'
 import { FirestoreProvider } from 'react-firestore' */
 

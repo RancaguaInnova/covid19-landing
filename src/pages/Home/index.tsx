@@ -22,9 +22,9 @@ const Home: React.FC = () => {
             <section>
                 <HealthServices />
             </section>
-            <section>
+            {/*  <section>
                 <Suggestions />
-            </section>
+            </section> */}
             <section>
                 <Map />
             </section>

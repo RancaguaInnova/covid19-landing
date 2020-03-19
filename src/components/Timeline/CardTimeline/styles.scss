@@ -1,9 +1,10 @@
 @import 'variables';
 .card {
-    background-color: rgb(77,106,121);
+    background-color: $secondaryColor;
     box-shadow: 0 0 2px grey;
     margin: .4rem 0rem;
     color: white;
+    border-radius: 8px;
 }
 
 .card-title {
@@ -12,15 +13,33 @@
     font-weight: bold;
 }
 
-
 .card-body h5 {
+    font-size: .8rem;
+}
+
+.card-body .hour {
+    color: black; // #ffeb3b;
     font-size: 1rem;
 }
 
-.card-body .date {
-    color: #ffeb3b
+.card-body .day {
+    font-size: 1rem;
 }
 
 .card-body p {
-    font-size: .8rem;
+    font-size: .7rem;
+}
+
+.card-link {
+    color: white;
+}
+
+.card-text {
+    height: auto;
+}
+
+.show-overflow {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }

@@ -4,7 +4,7 @@ import './styles.scss'
 const Map: React.FC = () => {
     return (
         <div className='map'>
-            <h3>Mapa de Contingencia</h3>
+            <h3 className='text-uppercase'>Mapa de Contingencia</h3>
             <p className='info-txt'>Información sobre puntos de interés reelevantes para la ciudadanía.</p>
             <div className='map-box'>
                 <iframe
