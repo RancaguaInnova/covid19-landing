@@ -1,17 +1,16 @@
 @import 'variables';
-
+@import 'bootstrap';
 body {
-  margin: 0;
-  font-family: 'Futura';
-  src: url($futuraFontPath) format('woff');
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: $bodyBackground;
+    margin: 0;
+    font-family: 'Futura';
+    src: url($futuraFontPath) format('woff');
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: $bodyBackground;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
 /* .container {
@@ -23,7 +22,7 @@ code {
 }
  */
 
- .info-txt {
-   color: grey;
-   padding: 8px
- }
+.info-txt {
+    color: grey;
+    padding: 8px;
+}
