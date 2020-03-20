@@ -1,10 +1,13 @@
 @import 'variables';
 
-
 .list-group-item p {
     font-size: .8rem;
 }
 
 .list-group-item h5 {
     width: 100%;
+}
+
+.vaccination-item h5 {
+    font-size: 1rem;
 }
