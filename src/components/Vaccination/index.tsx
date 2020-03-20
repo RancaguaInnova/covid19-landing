@@ -33,6 +33,35 @@ const Vaccination: React.FC = () => {
       <h5>¿Quiénes deben vacunarse contra la influenza?</h5>
 
       <div className="container-fluid">
+        <div className="row">
+          <div className="col-md-12">
+            <ul className="lista">
+              <li>
+                <span>Embarazadas (independiente del mes de gestación)</span>
+              </li>
+              <li>
+                <span>Adultos mayores de 65 años</span>
+              </li>
+              <li>
+                <span>Niños desde los 6 meses hasta los 10 años</span>
+              </li>
+              <li>
+                <span>Enfermos crónicos</span>
+              </li>
+              <li>
+                <span>Trabajadores avicolas y criadores de cerdos</span>
+              </li>
+            </ul>
+          </div>
+        </div>{" "}
+        <div className="row">
+          <div className="col-md-12">
+            <span>
+              *Si es cuidador de algún adulto mayor, también puede acceder a la
+              vacuna si lo desea
+            </span>
+          </div>
+        </div>
         <div className="mensaje row">
           <div className="col-md-12">
             <div>Personas mayores de 75 años deben inscribirse a través</div>
