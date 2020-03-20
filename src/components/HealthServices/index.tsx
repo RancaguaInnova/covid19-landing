@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import Accordion from 'react-bootstrap/Accordion'
 import HealtItem from './HealtItem'
 import app from 'providers/firebase'
 import { collectionData } from 'rxfire/firestore'
@@ -42,16 +43,16 @@ const HealthServices: React.FC = () => {
                 {loading ? (
                     <Loading />
                 ) : (
-                    <div className='list-group '>
+                    <Accordion>
                         {_sortBy(services.filter((s) => s.active), (s) => s.name).map((service, idx) => (
                             <HealtItem
-                                service={service}
+                                service={{ ...service, idx }}
                                 key={idx}
                                 active={_isEqual(service, current)}
                                 onSelect={onSelectItem}
                             />
                         ))}
-                    </div>
+                    </Accordion>
                 )}
             </div>
             {/* <small className='pt-2 text-danger'>Desliza para ver todos</small> */}

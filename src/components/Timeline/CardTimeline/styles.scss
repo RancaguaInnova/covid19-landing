@@ -1,5 +1,5 @@
 @import 'variables';
-.card {
+.card-timeline .card {
     background-color: $mainColor;
     box-shadow: 0 0 2px grey;
     margin: .4rem 0rem;
@@ -7,43 +7,43 @@
     border-radius: 8px;
 }
 
-.card-title {
+.card-timeline .card-title {
     text-align: center;
     color: white;
     font-weight: bold;
 }
 
-.card-body h5 {
+.card-timeline .card-body h5 {
     font-size: .8rem;
 }
 
-.card-body .hour {
+.card-timeline .card-body .hour {
     color: black; // #ffeb3b;
     font-size: 1rem;
 }
 
-.card-body .day {
+.card-timeline .card-body .day {
     font-size: 1.2rem;
 }
 
-.card-body p {
+.card-timeline .card-body p {
     font-size: .7rem;
 }
 
-.card-link {
+.card-timeline .card-link {
     color: white;
 }
 
-.card-text {
+.card-timeline .card-text {
     height: auto;
 }
 
-.show-overflow {
+.card-timeline .show-overflow {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
-.separator {
+.card-timeline .separator {
     border-top: 1px solid white;
 }
