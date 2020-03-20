@@ -1,20 +1,35 @@
 @import 'variables';
+
+.left-column {
+    padding: .5rem;
+}
+
+.card-timeline {
+    padding: .4rem;
+}
+
 .card-timeline .card {
     background-color: $mainColor;
     box-shadow: 0 0 2px grey;
-    margin: .4rem 0rem;
+    margin: .2rem 0rem;
     color: white;
     /* padding: 1rem; */
     border-radius: 8px;
 }
 
+.card-content {
+    background-color: white;
+    padding: .2rem 0;
+}
+
 .card-timeline .card-title {
     text-align: center;
-    color: white;
+    /* color: white; */
+    color: black;
     font-weight: bold;
 }
 .card-timeline .card-body {
-    padding: .8rem;
+    padding: 0;
 }
 
 .card-timeline .card-body h5 {
@@ -40,6 +55,8 @@
 
 .card-timeline .card-text {
     height: auto;
+    color: black;
+    padding: 4px;
 }
 
 .card-timeline .show-overflow {

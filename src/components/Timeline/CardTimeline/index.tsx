@@ -18,8 +18,8 @@ const CardTimeline: React.FC<CardProps> = ({ card }) => {
         <div className='card-timeline'>
             <div className='card'>
                 <div className='card-body'>
-                    <div className='row'>
-                        <div className='col-3 text-center p-0'>
+                    <div className='row left-column'>
+                        <div className='col-3 text-center p-0 '>
                             <p>
                                 <FontAwesomeIcon icon={faClock} size={'2x'} />
                             </p>
@@ -34,7 +34,7 @@ const CardTimeline: React.FC<CardProps> = ({ card }) => {
                                 </a>
                             )} */}
                         </div>
-                        <div className='col-9'>
+                        <div className='col-8 card-content'>
                             <h5 className='card-title'>{card.title}</h5>
                             <p className='card-text'>
                                 {more ? (
