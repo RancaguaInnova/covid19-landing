@@ -42,7 +42,8 @@ const VaccinationItem: React.FC<VaccinationProp> = ({ service, current, onSelect
                         <div className='list-body'>
                             <p>
                                 <a href={location} target='_blank' className='btn btn-block btn-outline-link text-left'>
-                                    <FontAwesomeIcon icon={faMapMarker} /> {service.complete_address}
+                                    <FontAwesomeIcon icon={faMapMarker} className='health-icon' />{' '}
+                                    {service.complete_address}
                                 </a>
                             </p>
 
@@ -52,7 +53,7 @@ const VaccinationItem: React.FC<VaccinationProp> = ({ service, current, onSelect
                                         href={`Tel:${service.phone}`}
                                         className='btn btn-block btn-outline-link text-left'
                                     >
-                                        <FontAwesomeIcon icon={faPhone} /> {service.phone}
+                                        <FontAwesomeIcon icon={faPhone} className='health-icon' /> {service.phone}
                                     </a>
                                 </p>
                             )}
@@ -61,7 +62,8 @@ const VaccinationItem: React.FC<VaccinationProp> = ({ service, current, onSelect
                             service.businessHours.trim() !== '' && (
                                 <p>
                                     <button className='btn btn-block btn-outline-link text-left'>
-                                        <FontAwesomeIcon icon={faClock} /> {service.businessHours}
+                                        <FontAwesomeIcon icon={faClock} className='health-icon' />{' '}
+                                        {service.businessHours}
                                     </button>
                                 </p>
                             )}

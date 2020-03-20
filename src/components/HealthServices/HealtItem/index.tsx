@@ -38,7 +38,7 @@ const Service: React.FC<ServiceProps> = ({ service, current, onSelect }) => {
                                     target='_blank'
                                     className='btn btn-block btn-outline-link text-left'
                                 >
-                                    <FontAwesomeIcon icon={faMapMarker} />{' '}
+                                    <FontAwesomeIcon icon={faMapMarker} className='health-icon' />{' '}
                                     {service.contactInformation.address.streetName}{' '}
                                     {service.contactInformation.address.number || ''},{' '}
                                     {service.contactInformation.address.city}
@@ -51,7 +51,8 @@ const Service: React.FC<ServiceProps> = ({ service, current, onSelect }) => {
                                         href={`Tel:${service.contactInformation.phone.number}`}
                                         className='btn btn-block btn-outline-link text-left'
                                     >
-                                        <FontAwesomeIcon icon={faPhone} /> {service.contactInformation.phone.number}
+                                        <FontAwesomeIcon icon={faPhone} className='health-icon' />{' '}
+                                        {service.contactInformation.phone.number}
                                     </a>
                                 </p>
                             )}
@@ -59,7 +60,8 @@ const Service: React.FC<ServiceProps> = ({ service, current, onSelect }) => {
                             {service.businessHours && (
                                 <p>
                                     <button className='btn btn-block btn-outline-link text-left'>
-                                        <FontAwesomeIcon icon={faClock} /> {service.businessHours}
+                                        <FontAwesomeIcon icon={faClock} className='health-icon' />{' '}
+                                        {service.businessHours}
                                     </button>
                                 </p>
                             )}
@@ -68,7 +70,8 @@ const Service: React.FC<ServiceProps> = ({ service, current, onSelect }) => {
                             service.businessHoursSapu.trim() !== '' && (
                                 <p>
                                     <button className='btn btn-block btn-outline-link text-left'>
-                                        <FontAwesomeIcon icon={faAmbulance} /> SAPU {service.businessHoursSapu}
+                                        <FontAwesomeIcon icon={faAmbulance} className='health-icon' /> SAPU{' '}
+                                        {service.businessHoursSapu}
                                     </button>
                                 </p>
                             )}

@@ -4,7 +4,7 @@
     box-shadow: 0 0 2px grey;
     margin: .4rem 0rem;
     color: white;
-    padding: 1rem;
+    /* padding: 1rem; */
     border-radius: 8px;
 }
 
@@ -12,6 +12,9 @@
     text-align: center;
     color: white;
     font-weight: bold;
+}
+.card-timeline .card-body {
+    padding: .8rem;
 }
 
 .card-timeline .card-body h5 {
