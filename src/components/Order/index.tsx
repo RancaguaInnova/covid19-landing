@@ -85,7 +85,7 @@ const Order: React.FC = () => {
               <li className="list-group-item" key={key}>
                 <a
                   href="#"
-                  className="btn text-left btn-block btn-primary stretched-link"
+                  className="btn text-left btn-block btn-primary stretched-link morado"
                   onClick={() => showModal(action)}
                 >
                   {action.description}
