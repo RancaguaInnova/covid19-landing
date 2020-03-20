@@ -25,7 +25,7 @@ function MydModalWithGrid(props: any) {
                 )}
             </Modal.Body>
             <Modal.Footer>
-                <Button onClick={props.onHide} variant='outline-danger'>
+                <Button onClick={props.onHide} variant='danger'>
                     Cerrar
                 </Button>
             </Modal.Footer>
@@ -89,7 +89,7 @@ const Order: React.FC = () => {
             <MydModalWithGrid show={modalShow} onHide={() => setModalShow(false)} action={action} />
             <div className='m-2 pt-4'>
                 <a
-                    className='btn btn-block btn-outline-danger text-uppercase'
+                    className='btn btn-block btn-danger text-uppercase'
                     target='_blank'
                     href='https://www.gob.cl/coronavirus/'
                 >
