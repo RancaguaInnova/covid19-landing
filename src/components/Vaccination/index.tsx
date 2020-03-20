@@ -40,7 +40,7 @@ const Vaccination: React.FC = () => {
             <h5>¿Quiénes deben vacunarse contra la influenza?</h5>
 
             <div className='container-fluid'>
-                <div className='mensaje row'>
+                <div className='message row'>
                     <div className='col-md-12'>
                         <div>Personas mayores de 75 años deben inscribirse a través</div>
 
@@ -68,17 +68,6 @@ const Vaccination: React.FC = () => {
                     </Accordion>
                 </div>
             )}
-            {/*  <small className='pt-2 text-danger'>Desliza para ver todos</small> */}
-            {/* <div className='m-2'>
-                <button
-                    className='btn btn-block btn-outline-danger'
-                    onClick={() => {
-                        setMore(!more)
-                    }}
-                >
-                    {more ? 'Mostrar menos' : 'Mostrar todos'}
-                </button>
-            </div> */}
         </div>
     )
 }

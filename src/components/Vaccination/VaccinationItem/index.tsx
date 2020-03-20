@@ -69,17 +69,6 @@ const VaccinationItem: React.FC<VaccinationProp> = ({ service, current, onSelect
                     </Card.Body>
                 </Accordion.Collapse>
             </Card>
-            {/* <li className='list-group-item list-group-item-action text-left'>
-            <div className='d-flex w-100 justify-content-between'>
-                <h5 className='mb-1'>
-                    {service.name_place}
-                </h5>
-            </div>
-            <p className='mb-1 font-weight-bold'>{service.complete_address}</p>
-            <p>
-                <small>{service.businessHours}</small>
-            </p>
-        </li> */}
         </div>
     )
 }
