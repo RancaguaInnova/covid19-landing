@@ -6,9 +6,6 @@
 }
 
 .vaccination-box {
-    /* height: 50vh; */
-
-    /* padding: 4px; */
     background-color: white;
     border-radius: 4px;
 }
@@ -19,4 +16,23 @@
     font-size: 0.75rem;
     padding: 0.4rem;
     border-radius: 8px;
+}
+
+.lista {
+    text-align: left;
+    font-size: .9rem;
+}
+
+.lista li {
+    color: $mainColor;
+}
+
+.lista li > span {
+    color: black;
+}
+
+.warn {
+    color: grey;
+    font-size: .8rem;
+    text-align: justify;
 }
