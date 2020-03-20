@@ -73,7 +73,10 @@ const Vaccination: React.FC = () => {
                         <div>Personas mayores de 75 años deben inscribirse a través</div>
 
                         <div>
-                            <b>CALL CENTER 800 72 00 44</b> para acceder a su vacuna
+                            <a href='Tel:800720044'>
+                                <b>CALL CENTER 800 72 00 44</b>
+                            </a>{' '}
+                            para acceder a su vacuna
                         </div>
                     </div>
                 </div>
