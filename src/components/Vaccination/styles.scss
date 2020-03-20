@@ -1,13 +1,21 @@
-@import 'variables';
+@import "variables";
 
 .vaccination .hash {
-    font-size: .8rem;
-    color: $mainColor;
+  font-size: 0.8rem;
+  color: $mainColor;
 }
 
 .vaccination-box {
-    height: 50vh;
-    /* padding: 4px; */
-    background-color: white;
-    border-radius: 4px;
+  height: 50vh;
+
+  /* padding: 4px; */
+  background-color: white;
+  border-radius: 4px;
+}
+
+.mensaje {
+  background-color: #8759a4;
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 0.4rem;
 }
