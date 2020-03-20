@@ -2,7 +2,7 @@ import React from 'react'
 import Accordion from 'react-bootstrap/Accordion'
 import Card from 'react-bootstrap/Card'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSortDown, faSortUp, faMapMarker, faPhone, faClock } from '@fortawesome/free-solid-svg-icons'
+import { faSortDown, faSortUp, faMapMarker, faPhone, faClock, faAmbulance } from '@fortawesome/free-solid-svg-icons'
 
 import './styles.scss'
 type ServiceProps = {
@@ -60,6 +60,15 @@ const Service: React.FC<ServiceProps> = ({ service, current, onSelect }) => {
                                 <p>
                                     <button className='btn btn-block btn-outline-link text-left'>
                                         <FontAwesomeIcon icon={faClock} /> {service.businessHours}
+                                    </button>
+                                </p>
+                            )}
+
+                            {service.businessHoursSapu &&
+                            service.businessHoursSapu.trim() !== '' && (
+                                <p>
+                                    <button className='btn btn-block btn-outline-link text-left'>
+                                        <FontAwesomeIcon icon={faAmbulance} /> SAPU {service.businessHoursSapu}
                                     </button>
                                 </p>
                             )}
