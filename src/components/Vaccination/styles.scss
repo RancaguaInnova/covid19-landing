@@ -14,8 +14,9 @@
 }
 
 .message {
-    background-color: #e84b70;
-    color: #fff;
+    border: solid 2px $mainColor;
+    color: black;
     font-size: 0.75rem;
     padding: 0.4rem;
+    border-radius: 8px;
 }
