@@ -49,7 +49,7 @@ const Vaccination: React.FC = () => {
                 <span>Enfermos crónicos</span>
               </li>
               <li>
-                <span>Trabajadores avicolas y criadores de cerdos</span>
+                <span>Trabajadores avícolas y criadores de cerdos</span>
               </li>
             </ul>
           </div>
