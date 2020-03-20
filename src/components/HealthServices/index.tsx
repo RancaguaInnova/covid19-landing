@@ -48,7 +48,7 @@ const HealthServices: React.FC = () => {
                             <HealtItem
                                 service={{ ...service, idx }}
                                 key={idx}
-                                active={_isEqual(service, current)}
+                                current={current}
                                 onSelect={onSelectItem}
                             />
                         ))}

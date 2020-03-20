@@ -35,10 +35,13 @@
 }
 
 .list-body {
-    text-align: center;
+    text-align: left;
 }
 
 .list-body p {
     font-size: 1rem;
-    line-height: 1.4rem;
+}
+
+.list-body p FontAwesomeIcon {
+    margin-left: 4px;
 }
