@@ -17,7 +17,7 @@ const Service: React.FC<ServiceProps> = ({ service, active = false, onSelect }) 
         >
             <div className='row d-flex w-100 justify-content-between'>
                 <div className='col-10 p-0'>
-                    <h5 className={`mb-1 text-left ${active ? 'font-weight-bold' : ''}`}>
+                    <h5 className={`mb-1 text-left`}>
                         {service.name}
                         {/* <span className='float-right'>
                         <FontAwesomeIcon icon={faPhone} />
