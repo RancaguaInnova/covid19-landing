@@ -93,7 +93,9 @@ const Vaccination: React.FC = () => {
                 {!loading && (
                     <div className='pl-2 pr-2 vaccination-box'>
                         <Accordion>
-                            {_sortBy(services.filter((s) => s.active), (s) => s.name).map((service, idx) => (
+                            {_sortBy(services.filter((s) => s.active), (s) => {
+                                return s.name_place
+                            }).map((service, idx) => (
                                 <VaccinationItem
                                     service={{ ...service, idx }}
                                     current={current}
