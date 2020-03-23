@@ -1,19 +1,17 @@
 import React from 'react'
 import './styles.scss'
+import { isMobile } from 'mobile-device-detect'
 
 const Header: React.FC = () => {
-    return (
+    return isMobile ? (
         <div className='header'>
             <img src='assets/images/mobile-header.png' className='img-fluid' />
-            {/*  <div className='row'>
-                <div className='col-8'>
-                    <h1 className='text-center'>CONTINGENCIA</h1>
-                    <h2 className='text-center'>CORONAVIRUS</h2>
-                </div>
-                <div className='col-4'>
-                   
-                </div>
-            </div> */}
+        </div>
+    ) : (
+        <div className='container'>
+            <div className='header'>
+                <img src='assets/images/mobile-header.png' className='img-fluid' />
+            </div>
         </div>
     )
 }

@@ -20,19 +20,13 @@ const CardTimeline: React.FC<CardProps> = ({ card }) => {
                 <div className='card-body'>
                     <div className='row left-column'>
                         <div className='col-3 text-center p-0 '>
-                            <p>
-                                <FontAwesomeIcon icon={faClock} size={'2x'} />
-                            </p>
                             <h5 className='font-weight-bold day'>{date.format('DD').toUpperCase()}</h5>
                             <h5 className='font-weight-bold month'>{date.format('MMMM').toUpperCase()}</h5>
-                            {/*  <hr className='separator' /> */}
-                            <p className='font-weight-bold hour'>{date.format('HH:mm')}</p>
 
-                            {/* {card.urlExterna.trim() !== '' && (
-                                <a className='btn btn-block btn-link card-link' href={card.urlExterna} target='_blank'>
-                                    <FontAwesomeIcon icon={faLink} />
-                                </a>
-                            )} */}
+                            <p className='pt-2'>
+                                <FontAwesomeIcon icon={faClock} size={'2x'} />
+                            </p>
+                            <p className='font-weight-bold hour'>{date.format('HH:mm')}</p>
                         </div>
                         <div className='col-8 card-content'>
                             <h5 className='card-title'>{card.title}</h5>
@@ -43,14 +37,6 @@ const CardTimeline: React.FC<CardProps> = ({ card }) => {
                                     `${card.description.substring(0, 140)}${card.description.length > 140 ? '...' : ''}`
                                 )}
                             </p>
-                            {/* <button
-                                className='btn btn-block btn-link'
-                                onClick={() => {
-                                    setMore(!more)
-                                }}
-                            >
-                                Ver más
-                            </button> */}
                         </div>
                     </div>
                 </div>

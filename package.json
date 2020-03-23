@@ -20,6 +20,7 @@
         "bootstrap": "^4.4.1",
         "firebase": "^7.11.0",
         "lodash": "^4.17.15",
+        "mobile-device-detect": "^0.3.3",
         "moment-timezone": "^0.5.28",
         "node-sass": "^4.13.1",
         "react": "^16.12.0",

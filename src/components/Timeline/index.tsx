@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react'
+import { isMobile } from 'mobile-device-detect'
+
 import app from 'providers/firebase'
 import moment from 'moment-timezone'
 import { collectionData } from 'rxfire/firestore'
@@ -37,7 +39,7 @@ const Timeline: React.FC = () => {
             <h3 className='text-uppercase'>Último minuto</h3>
             <h4>#covid19rancagua</h4>
             <hr />
-            <div className='timeline-box overflow-auto'>
+            <div className={`${isMobile ? 'timeline-box' : 'timeline-box-desktop'} overflow-auto`}>
                 {loading && <Loading />}
                 {!loading && (
                     <div className='news-container'>
