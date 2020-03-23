@@ -19,7 +19,7 @@ const CardTimeline: React.FC<CardProps> = ({ card }) => {
             <div className='card'>
                 <div className='card-body'>
                     <div className='row left-column'>
-                        <div className='col-3 text-center p-0 '>
+                        <div className='col-3 text-center p-2 '>
                             <h5 className='font-weight-bold day'>{date.format('DD').toUpperCase()}</h5>
                             <h5 className='font-weight-bold month'>{date.format('MMMM').toUpperCase()}</h5>
 
@@ -28,7 +28,7 @@ const CardTimeline: React.FC<CardProps> = ({ card }) => {
                             </p>
                             <p className='font-weight-bold hour'>{date.format('HH:mm')}</p>
                         </div>
-                        <div className='col-8 card-content'>
+                        <div className='col-8 card-content p-2'>
                             <h5 className='card-title'>{card.title}</h5>
                             <p className='card-text'>
                                 {more ? (

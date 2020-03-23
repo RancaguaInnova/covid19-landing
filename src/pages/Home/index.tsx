@@ -42,17 +42,21 @@ const Home: React.FC = () => {
             </section>
 
             <section>
+                <Vaccination />
+            </section>
+            <section>
                 <div className='row'>
-                    <div className='col-6'>
-                        <Vaccination />
-                    </div>
-                    <div className='col-6'>
+                    <div className='offset-1 col-10'>
                         <HealthServices />
                     </div>
                 </div>
             </section>
             <section>
-                <Map />
+                <div className='row'>
+                    <div className='offset-1 col-10'>
+                        <Map />
+                    </div>
+                </div>
             </section>
         </div>
     )
