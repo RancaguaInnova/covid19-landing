@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import app from 'providers/firebase'
 import { collectionData } from 'rxfire/firestore'
 import _isEqual from 'lodash/isEqual'
+import _sortBy from 'lodash/sortBy'
+
 import Loading from 'components/Loading'
 /* import { FirestoreCollection } from 'react-firestore' */
 import { Modal, Container, Row, Col, Button } from 'react-bootstrap'
@@ -73,7 +75,7 @@ const Order: React.FC = () => {
                 <Loading />
             ) : (
                 <div className='m-2 text-left order-list'>
-                    {actions.filter((a: any) => a.active).map((action, key) => (
+                    {_sortBy(actions.filter((a: any) => a.active), (a) => a.date.toDate()).map((action, key) => (
                         <p key={key}>
                             <button
                                 className='btn btn-block btn-outline-secondary text-justify'
