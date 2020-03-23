@@ -32,10 +32,10 @@ const Home: React.FC = () => {
         <div className='home'>
             <section>
                 <div className='row'>
-                    <div className='col-6'>
+                    <div className='offset-1 col-5'>
                         <Timeline />
                     </div>
-                    <div className='col-6'>
+                    <div className='col-5'>
                         <Order />
                     </div>
                 </div>
