@@ -1,0 +1,25 @@
+@import 'variables';
+
+/* Darker background on mouse-over */
+.btn:hover {
+  border: none;
+}
+
+.flotante {
+  display: scroll;
+  position: fixed;
+  bottom: 20px;
+  right: 0px;
+  background: transparent;
+}
+.img-flotante {
+  background: transparent;
+}
+.information-title {
+  background-color: $mainColor;
+  color: #fff;
+}
+
+.information-title .close {
+  color: #fff;
+}
