@@ -31,17 +31,19 @@ const Home: React.FC = () => {
       <Information></Information>
     </div>
   ) : (
-    <div className="home">
-      <section>
-        <div className="row">
-          <div className="col-6">
-            <Timeline />
-          </div>
-          <div className="col-6">
-            <Order />
-          </div>
-        </div>
-      </section>
+
+        <div className='home'>
+            <section>
+                <div className='row'>
+                    <div className='offset-1 col-5'>
+                        <Timeline />
+                    </div>
+                    <div className='col-5'>
+                        <Order />
+                    </div>
+                </div>
+            </section>
+
 
       <section>
         <Vaccination />
