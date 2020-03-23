@@ -1,16 +1,30 @@
 @import 'variables';
 @import 'bootstrap';
+@font-face {
+  font-family: 'Futura';
+  src: url('/assets/fonts/@font-face/e8c6a63541de0a4211a9358cbe74690f.eot');
+  src: url('/assets/fonts/@font-face/e8c6a63541de0a4211a9358cbe74690f.eot?#iefix')
+      format('embedded-opentype'),
+    url('/assets/fonts/@font-face/e8c6a63541de0a4211a9358cbe74690f.woff2')
+      format('woff2'),
+    url('/assets/fonts/@font-face/e8c6a63541de0a4211a9358cbe74690f.woff')
+      format('woff'),
+    url('/assets/fonts/@font-face/e8c6a63541de0a4211a9358cbe74690f.ttf')
+      format('truetype'),
+    url('/assets/fonts/@font-face/e8c6a63541de0a4211a9358cbe74690f.svg#Futura')
+      format('svg');
+}
 body {
-    margin: 0;
-    font-family: 'Futura';
-    src: url($futuraFontPath) format('woff');
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    background-color: $bodyBackground;
+  margin: 0;
+  font-family: 'Futura';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $bodyBackground;
 }
 
 code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
 
 /* .container {
@@ -23,6 +37,6 @@ code {
  */
 
 .info-txt {
-    color: grey;
-    padding: 8px;
+  color: grey;
+  padding: 8px;
 }
