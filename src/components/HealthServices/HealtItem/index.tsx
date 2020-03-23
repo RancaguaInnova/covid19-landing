@@ -40,8 +40,8 @@ const Service: React.FC<ServiceProps> = ({ service, current, onSelect }) => {
                                 >
                                     <FontAwesomeIcon icon={faMapMarker} className='health-icon' />{' '}
                                     {service.contactInformation.address.streetName}
-                                    {service.contactInformation.address.number ? (
-                                        ` ${service.contactInformation.address.number}, `
+                                    {service.contactInformation.address.streetNumber ? (
+                                        ` ${service.contactInformation.address.streetNumber}, `
                                     ) : (
                                         ', '
                                     )}{' '}
