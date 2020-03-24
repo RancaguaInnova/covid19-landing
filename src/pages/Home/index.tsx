@@ -25,25 +25,23 @@ const Home: React.FC = () => {
       <section>
         <HealthServices />
       </section>
-      <section>
+      {/*     <section>
         <Map />
-      </section>
+      </section> */}
       <Information></Information>
     </div>
   ) : (
-
-        <div className='home'>
-            <section>
-                <div className='row'>
-                    <div className='offset-1 col-5'>
-                        <Timeline />
-                    </div>
-                    <div className='col-5'>
-                        <Order />
-                    </div>
-                </div>
-            </section>
-
+    <div className="home">
+      <section>
+        <div className="row">
+          <div className="offset-1 col-5">
+            <Timeline />
+          </div>
+          <div className="col-5">
+            <Order />
+          </div>
+        </div>
+      </section>
 
       <section>
         <Vaccination />
@@ -55,13 +53,13 @@ const Home: React.FC = () => {
           </div>
         </div>
       </section>
-      <section>
+      {/*    <section>
         <div className="row">
           <div className="offset-1 col-10">
             <Map />
           </div>
         </div>
-      </section>
+      </section> */}
       <Information></Information>
     </div>
   )
