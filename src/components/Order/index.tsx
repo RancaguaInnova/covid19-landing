@@ -78,16 +78,18 @@ const Order: React.FC = () => {
                 <Loading />
             ) : (
                 <div className='m-2 text-left order-list'>
-                    {_sortBy(actions.filter((a: any) => a.active), (a) => a.date.toDate()).map((action, key) => (
-                        <p key={key}>
-                            <button
-                                className='btn btn-block btn-outline-secondary text-left'
-                                onClick={() => showModal(action)}
-                            >
-                                {action.description}
-                            </button>
-                        </p>
-                    ))}
+                    {_sortBy(actions.filter((a: any) => a.active), (a) => a.date.toDate())
+                        .reverse()
+                        .map((action, key) => (
+                            <p key={key}>
+                                <button
+                                    className='btn btn-block btn-outline-secondary text-left'
+                                    onClick={() => showModal(action)}
+                                >
+                                    {action.description}
+                                </button>
+                            </p>
+                        ))}
                 </div>
             )}
 
