@@ -11,27 +11,26 @@ import './styles.scss'
 import Information from 'components/Information'
 
 const Home: React.FC = () => {
-  return isMobile ? (
-    <div className="home">
-      <section>
-        <Timeline />
-      </section>
-      <section>
-        <Order />
-      </section>
-      <section>
-        <Vaccination />
-      </section>
-      <section>
-        <HealthServices />
-      </section>
-      <section>
+    return isMobile ? (
+        <div className='home'>
+            <section>
+                <Timeline />
+            </section>
+            <section>
+                <Order />
+            </section>
+            <section>
+                <Vaccination />
+            </section>
+            <section>
+                <HealthServices />
+            </section>
+            {/* <section>
         <Map />
-      </section>
-      <Information></Information>
-    </div>
-  ) : (
-
+      </section> */}
+            <Information />
+        </div>
+    ) : (
         <div className='home'>
             <section>
                 <div className='row'>
@@ -44,27 +43,26 @@ const Home: React.FC = () => {
                 </div>
             </section>
 
-
-      <section>
-        <Vaccination />
-      </section>
-      <section>
-        <div className="row">
-          <div className="offset-1 col-10">
-            <HealthServices />
-          </div>
-        </div>
-      </section>
-      <section>
+            <section>
+                <Vaccination />
+            </section>
+            <section>
+                <div className='row'>
+                    <div className='offset-1 col-10'>
+                        <HealthServices />
+                    </div>
+                </div>
+            </section>
+            {/* <section>
         <div className="row">
           <div className="offset-1 col-10">
             <Map />
           </div>
         </div>
-      </section>
-      <Information></Information>
-    </div>
-  )
+      </section> */}
+            <Information />
+        </div>
+    )
 }
 
 export default Home
