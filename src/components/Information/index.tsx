@@ -27,13 +27,14 @@ function ModalInformation(props: any) {
                         <Col md={12}>
                             <MdLocalPhone /> Linea 800 gratuita:{' '}
                             <a
-                                href='tel:800100020'
                                 onClick={() => {
                                     ReactGA.event({
                                         category: 'information-call',
-                                        action: '800100020'
+                                        action: 'tel:800100020'
                                     })
                                 }}
+                                href='tel:800100020'
+                                target='_blank'
                             >
                                 800100020
                             </a>
@@ -43,13 +44,14 @@ function ModalInformation(props: any) {
                         <Col md={12}>
                             <FaWhatsapp /> WhatsApp:{' '}
                             <a
-                                href='https://wa.me/56956478170'
                                 onClick={() => {
                                     ReactGA.event({
                                         category: 'information-whatsapp',
-                                        action: '56956478170'
+                                        action: 'wa.me/56956478170'
                                     })
                                 }}
+                                href='https://wa.me/56956478170'
+                                target='_blank'
                             >
                                 +56956478170
                             </a>
@@ -59,13 +61,14 @@ function ModalInformation(props: any) {
                         <Col md={12}>
                             <MdEmail /> Correo:{' '}
                             <a
-                                href='mailto:emergencia@rancagua.cl'
                                 onClick={() => {
                                     ReactGA.event({
                                         category: 'information-email',
-                                        action: 'emergencia@rancagua.cl'
+                                        action: 'mailto:emergencia@rancagua.cl'
                                     })
                                 }}
+                                href='mailto:emergencia@rancagua.cl'
+                                target='_blank'
                             >
                                 emergencia@rancagua.cl
                             </a>
