@@ -4,7 +4,8 @@ import ReactGA from 'react-ga'
 
 import Timeline from 'components/Timeline'
 import Map from 'components/Map'
-import Suggestions from 'components/Suggestions'
+import Services from 'components/Services'
+import ServicesUnavailable from 'components/ServicesUnavailable'
 import Order from 'components/Order'
 import HealthServices from 'components/HealthServices'
 import Vaccination from 'components/Vaccination'
@@ -16,21 +17,39 @@ const Home: React.FC = () => {
 
     return isMobile ? (
         <div className='home'>
-            <section>
-                <Timeline />
-            </section>
-            <section>
-                <Order />
-            </section>
-            <section>
-                <Vaccination />
-            </section>
-            <section>
-                <HealthServices />
-            </section>
+            <div className='covid container'>
+                <h2>CORONAVIRUS</h2>
+                <section>
+                    <Timeline />
+                </section>
+                <section>
+                    <Order />
+                </section>
+            </div>
+            <div className='vaccination-section container'>
+                <h2>CAMPAÑA INFLUENZA</h2>
+                <section>
+                    <Vaccination />
+                </section>
+            </div>
+            <div className='srv container'>
+                <h2>MUNICIPALIDAD DE RANCAGUA</h2>
+                <section>
+                    <Services />
+                </section>
+                <section>
+                    <ServicesUnavailable />
+                </section>
+            </div>
             {/* <section>
         <Map />
       </section> */}
+            <div className='comunity-section container'>
+                <h2>COMUNIDAD</h2>
+                <section>
+                    <Map />
+                </section>
+            </div>
             <Information />
         </div>
     ) : (

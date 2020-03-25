@@ -28,7 +28,7 @@ const App: React.FC = () => {
         <Router>
             <div className='App'>
                 <Header />
-                <div className='container'>
+                <div>
                     <Suspense fallback={<Loading />}>
                         <Switch>
                             {/* <Route path='/eventos'>

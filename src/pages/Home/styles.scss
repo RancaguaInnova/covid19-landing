@@ -1,23 +1,76 @@
+@import 'variables';
+
 section {
-  background-color: white;
-  border-radius: 8px;
-  margin: 1rem 0rem;
-  padding: 1rem 0.4rem;
-  box-shadow: 0 0 2px black;
-  min-height: 50vh;
+    background-color: white;
+    border-radius: 8px;
+    margin: 1rem 0rem;
+    padding: 1rem 0.4rem;
+    box-shadow: 0 0 2px black;
+    min-height: 50vh;
 }
 
 .warning-card {
-  background-color: yellow;
-  color: black;
+    background-color: yellow;
+    color: black;
 }
 
 section h3 {
-  font-size: 1.4rem;
-  font-weight: bold;
-  padding: 4px;
-  text-align: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 4px;
+    text-align: center;
 }
 .informationSection {
-  min-height: 10vh;
+    min-height: 10vh;
+}
+
+.covid {
+    background-image: linear-gradient($bodyBackground, $mainColor);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.covid h2 {
+    font-size: 1.7rem;
+    color: $mainColor;
+    font-weight: bold;
+}
+
+.vaccination-section {
+    background-image: linear-gradient($mainColor, $bodyBackground);
+    border-top: outset white 1px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.vaccination-section h2 {
+    font-size: 1.7rem;
+    color: white;
+    font-weight: bold;
+}
+
+.srv {
+    background-image: linear-gradient($bodyBackground, $mainColor);
+    border-top: outset $mainColor 1px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.srv h2 {
+    font-size: 1.7rem;
+    color: $mainColor;
+    font-weight: bold;
+}
+
+.comunity-section {
+    background-image: linear-gradient($mainColor, $bodyBackground);
+    border-top: outset white 1px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.comunity-section h2 {
+    font-size: 1.7rem;
+    color: white;
+    font-weight: bold;
 }
