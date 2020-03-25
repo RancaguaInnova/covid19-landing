@@ -15,7 +15,6 @@ import { config } from './providers/firebase.js'
 const Push:any = require('push.js')
 const PushFCM = require('push-fcm-plugin');
 
-console.log('config', config)
 
 Push.extend(PushFCM);
  Push.config({
@@ -33,7 +32,7 @@ const isLocalhost = Boolean(
 const isPushNotificationSupported = () => {
     try {
         const supported = 'serviceWorker' in navigator && 'PushManager' in window
-        console.log('supported', supported)
+        
         return supported
     } catch (error) {
         console.log('error!!', error)

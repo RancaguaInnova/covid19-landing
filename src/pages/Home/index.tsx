@@ -1,5 +1,6 @@
 import React from 'react'
 import { isMobile } from 'mobile-device-detect'
+import ReactGA from 'react-ga'
 
 import Timeline from 'components/Timeline'
 import Map from 'components/Map'
@@ -11,6 +12,8 @@ import './styles.scss'
 import Information from 'components/Information'
 
 const Home: React.FC = () => {
+    ReactGA.pageview('/')
+
     return isMobile ? (
         <div className='home'>
             <section>

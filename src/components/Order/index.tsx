@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import ReactGA from 'react-ga'
 import app from 'providers/firebase'
 import { collectionData } from 'rxfire/firestore'
 import _isEqual from 'lodash/isEqual'
@@ -56,6 +57,7 @@ const Order: React.FC = () => {
             collectionRef = collectionData(statusRef, 'id')
 
             collectionRef.subscribe((list: any = []) => {
+                /* console.log('list', list) */
                 // Prevent innecesary updates
                 if (!_isEqual(list, actions)) {
                     setActions(list)
@@ -84,7 +86,13 @@ const Order: React.FC = () => {
                             <p key={key}>
                                 <button
                                     className='btn btn-block btn-outline-secondary text-left'
-                                    onClick={() => showModal(action)}
+                                    onClick={() => {
+                                        ReactGA.event({
+                                            category: 'Recomendaciones',
+                                            action: action.description
+                                        })
+                                        showModal(action)
+                                    }}
                                 >
                                     {action.description}
                                 </button>

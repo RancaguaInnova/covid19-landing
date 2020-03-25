@@ -1,4 +1,5 @@
 import React, { lazy, Suspense } from 'react'
+import ReactGA from 'react-ga'
 
 /* import firebase from '@firebase/app'
 import { FirestoreProvider } from 'react-firestore' */
@@ -17,6 +18,7 @@ import './App.scss'
 }
 
 firebase.initializeApp(config) */
+ReactGA.initialize('UA-133228609-9')
 
 const Home = lazy(() => import('pages/Home'))
 const News = lazy(() => import('pages/News'))

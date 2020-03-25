@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import ReactGA from 'react-ga'
+
 import './styles.scss'
 import moment from 'moment-timezone'
 import 'moment/locale/es'
@@ -15,7 +17,12 @@ const CardTimeline: React.FC<CardProps> = ({ card }) => {
     const [ more, setMore ] = useState<boolean>(false)
     const date: any = moment(card.date.toDate()).tz(tz).locale('es')
     return (
-        <div className='card-timeline'>
+        <div
+            className='card-timeline'
+            onClick={() => {
+                ReactGA.modalview(card.urlExterna)
+            }}
+        >
             <div className='card'>
                 <div className='card-body'>
                     <div className='row left-column'>
