@@ -4,7 +4,7 @@ import './styles.scss'
 const Unavailable: React.FC = () => {
     return (
         <div className='unavailable-services'>
-            <h4>Trámites y servicios digitales disponibles</h4>
+            <h4>SUSPENSIÓN DE SERVICIOS</h4>
         </div>
     )
 }

@@ -4,7 +4,7 @@ import './styles.scss'
 const Services: React.FC = () => {
     return (
         <div className='services'>
-            <h4>Suspensión de Servicios</h4>
+            <h4>TRÁMITES Y SERVICIOS DISPONIBLES</h4>
         </div>
     )
 }

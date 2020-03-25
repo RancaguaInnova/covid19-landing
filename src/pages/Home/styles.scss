@@ -38,8 +38,8 @@ section h3 {
 
 .vaccination-section {
     background-image: linear-gradient($mainColor, $bodyBackground);
-    border-top: outset white 1px;
-    padding-top: 1rem;
+    /* border-top: outset white 1px; */
+    /*    padding-top: 1rem; */
     padding-bottom: 1rem;
 }
 
@@ -47,11 +47,12 @@ section h3 {
     font-size: 1.7rem;
     color: white;
     font-weight: bold;
+    padding-bottom: 1rem;
 }
 
 .srv {
     background-image: linear-gradient($bodyBackground, $mainColor);
-    border-top: outset $mainColor 1px;
+    /* border-top: outset $mainColor 1px; */
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
@@ -60,12 +61,13 @@ section h3 {
     font-size: 1.7rem;
     color: $mainColor;
     font-weight: bold;
+    padding-bottom: 1rem;
 }
 
 .comunity-section {
     background-image: linear-gradient($mainColor, $bodyBackground);
-    border-top: outset white 1px;
-    padding-top: 1rem;
+    /* border-top: outset white 1px; */
+    /* padding-top: 1rem; */
     padding-bottom: 1rem;
 }
 
@@ -73,4 +75,5 @@ section h3 {
     font-size: 1.7rem;
     color: white;
     font-weight: bold;
+    padding-bottom: 1rem;
 }

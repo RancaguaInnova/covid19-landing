@@ -18,7 +18,7 @@ const Home: React.FC = () => {
     return isMobile ? (
         <div className='home'>
             <div className='covid container'>
-                <h2>CORONAVIRUS</h2>
+                {/* <h2>CORONAVIRUS</h2> */}
                 <section>
                     <Timeline />
                 </section>
@@ -34,11 +34,12 @@ const Home: React.FC = () => {
             </div>
             <div className='srv container'>
                 <h2>MUNICIPALIDAD DE RANCAGUA</h2>
-                <section>
-                    <Services />
-                </section>
+
                 <section>
                     <ServicesUnavailable />
+                </section>
+                <section>
+                    <Services />
                 </section>
             </div>
             {/* <section>
@@ -50,7 +51,7 @@ const Home: React.FC = () => {
                     <Map />
                 </section>
             </div>
-            <Information />
+            {/*  <Information /> */}
         </div>
     ) : (
         <div className='home'>
