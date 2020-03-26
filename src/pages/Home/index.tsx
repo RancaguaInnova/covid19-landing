@@ -13,79 +13,79 @@ import './styles.scss'
 import Information from 'components/Information'
 
 const Home: React.FC = () => {
-    ReactGA.pageview('/')
+  ReactGA.pageview('/')
 
-    return isMobile ? (
-        <div className='home'>
-            <div className='covid container'>
-                {/* <h2>CORONAVIRUS</h2> */}
-                <section>
-                    <Timeline />
-                </section>
-                <section>
-                    <Order />
-                </section>
-            </div>
-            <div className='vaccination-section container'>
-                <h2>CAMPAÑA INFLUENZA</h2>
-                <section>
-                    <Vaccination />
-                </section>
-            </div>
-            <div className='srv container'>
-                <h2>MUNICIPALIDAD DE RANCAGUA</h2>
+  return isMobile ? (
+    <div className="home">
+      <div className="covid container">
+        {/* <h2>CORONAVIRUS</h2> */}
+        <section>
+          <Timeline />
+        </section>
+        <section>
+          <Order />
+        </section>
+      </div>
+      <div className="vaccination-section container">
+        <h2>CAMPAÑA INFLUENZA</h2>
+        <section>
+          <Vaccination />
+        </section>
+      </div>
+      <div className="srv container">
+        <h2>MUNICIPALIDAD DE RANCAGUA</h2>
 
-                <section>
-                    <ServicesUnavailable />
-                </section>
-                <section>
-                    <Services />
-                </section>
-            </div>
-            {/* <section>
+        <section>
+          <ServicesUnavailable />
+        </section>
+        <section>
+          <Services />
+        </section>
+      </div>
+      {/* <section>
         <Map />
       </section> */}
-            <div className='comunity-section container'>
-                <h2>COMUNIDAD</h2>
-                <section>
-                    <Map />
-                </section>
-            </div>
-            {/*  <Information /> */}
+      <div className="comunity-section container">
+        <h2>COMUNIDAD</h2>
+        <section>
+          <Map />
+        </section>
+      </div>
+      {/*  <Information /> */}
+    </div>
+  ) : (
+    <div className="home">
+      <section>
+        <div className="row">
+          <div className="offset-1 col-5">
+            <Timeline />
+          </div>
+          <div className="col-5">
+            <Order />
+          </div>
         </div>
-    ) : (
-        <div className='home'>
-            <section>
-                <div className='row'>
-                    <div className='offset-1 col-5'>
-                        <Timeline />
-                    </div>
-                    <div className='col-5'>
-                        <Order />
-                    </div>
-                </div>
-            </section>
+      </section>
 
-            <section>
-                <Vaccination />
-            </section>
-            <section>
-                <div className='row'>
-                    <div className='offset-1 col-10'>
-                        <HealthServices />
-                    </div>
-                </div>
-            </section>
-            {/* <section>
+      <section>
+        <Vaccination />
+      </section>
+      <section>
+        <div className="row">
+          <div className="offset-1 col-10">
+            <HealthServices />
+          </div>
+        </div>
+      </section>
+      {/* <section>
         <div className="row">
           <div className="offset-1 col-10">
             <Map />
           </div>
         </div>
       </section> */}
-            <Information />
-        </div>
-    )
+      <Information />
+    </div>
+  )
 }
 
 export default Home

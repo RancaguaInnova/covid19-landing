@@ -1,9 +1,12 @@
 .loading {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .unavailable-services {
-    min-height: 70vh;
+  min-height: 70vh;
+}
+.textservice {
+  font-size: 0.9rem;
 }
