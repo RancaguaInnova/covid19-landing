@@ -53,9 +53,9 @@ const Home: React.FC = () => {
                 <section>
                     <ServicesUnavailable />
                 </section>
-                <section>
+                {/* <section>
                     <Services />
-                </section>
+                </section> */}
                 <section>
                     <EmergencyNumbers />
                 </section>
@@ -110,9 +110,9 @@ const Home: React.FC = () => {
                 <section className='container p-4'>
                     <ServicesUnavailable />
                 </section>
-                <section className='container p-4'>
+                {/*  <section className='container p-4'>
                     <Services />
-                </section>
+                </section> */}
                 <section className='container p-4'>
                     <EmergencyNumbers />
                 </section>
