@@ -5,7 +5,7 @@ const Unavailable: React.FC = () => {
     return (
         <div className='unavailable-services p-2'>
             <h3 className='text-uppercase'>SUSPENSIÓN DE SERVICIOS</h3>
-            <div className='pt-2'>
+            <div className='p-4'>
                 <p className='text-justify '>
                     Para reducir al máximo la concentración de personas circulando en los servicios municipales la
                     Ilustre Municipalidad de Rancagua{' '}

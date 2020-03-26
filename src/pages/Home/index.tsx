@@ -29,9 +29,9 @@ const Home: React.FC = () => {
                 <section>
                     <Order />
                 </section>
-                <section>
+                {/* <section>
                     <Exams />
-                </section>
+                </section> */}
             </div>
             <div className='vaccination-section container'>
                 <h2>
@@ -63,39 +63,67 @@ const Home: React.FC = () => {
             {/* <section>
         <Map />
       </section> */}
-            <div className='comunity-section container'>
+            {/* <div className='comunity-section container'>
                 <h2>
                     <FontAwesomeIcon icon={faUsers} /> COMUNIDAD
                 </h2>
                 <section>
                     <Map />
                 </section>
-            </div>
+            </div> */}
             {/*  <Information /> */}
         </div>
     ) : (
         <div className='home'>
-            <section>
-                <div className='row'>
-                    <div className='offset-1 col-5'>
-                        <Timeline />
+            <div className='covid-desktop'>
+                <section className='container'>
+                    <div className='row'>
+                        <div className='offset-1 col-5'>
+                            <Timeline />
+                        </div>
+                        <div className='col-5'>
+                            <Order />
+                        </div>
                     </div>
-                    <div className='col-5'>
-                        <Order />
+                </section>
+            </div>
+            <div className='vaccination-section'>
+                <h2>
+                    <FontAwesomeIcon icon={faSyringe} /> CAMPAÑA INFLUENZA
+                </h2>
+                <section className='container'>
+                    <Vaccination />
+                </section>
+            </div>
+            <div className='srv '>
+                <div className='container'>
+                    <div className='row'>
+                        <div className='offset-4 col-1 p-0'>
+                            <img src='/assets/images/logo_red.png' className='img-fluid logo-rgua' />
+                        </div>
+                        <div className='col-3 pt-2'>
+                            <h2>MUNICIPALIDAD DE RANCAGUA</h2>
+                        </div>
                     </div>
                 </div>
-            </section>
 
-            <section>
-                <Vaccination />
-            </section>
-            <section>
+                <section className='container p-4'>
+                    <ServicesUnavailable />
+                </section>
+                <section className='container p-4'>
+                    <Services />
+                </section>
+                <section className='container p-4'>
+                    <EmergencyNumbers />
+                </section>
+            </div>
+            {/* <section>
                 <div className='row'>
                     <div className='offset-1 col-10'>
                         <HealthServices />
                     </div>
                 </div>
-            </section>
+            </section> */}
             {/* <section>
         <div className="row">
           <div className="offset-1 col-10">
@@ -103,7 +131,7 @@ const Home: React.FC = () => {
           </div>
         </div>
       </section> */}
-            <Information />
+            {/*  <Information /> */}
         </div>
     )
 }

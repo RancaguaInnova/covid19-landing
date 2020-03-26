@@ -7,6 +7,7 @@ const Exams: React.FC = () => {
             <h3 className='text-uppercase'>¿Qué hacer si tengo los síntomas?</h3>
             <div>Acá gráfica de que hacer?</div>
             <div>listado de lugares que hacen el examen?</div>
+            <div>medidas hacer si tengo coronavirus</div>
         </div>
     )
 }

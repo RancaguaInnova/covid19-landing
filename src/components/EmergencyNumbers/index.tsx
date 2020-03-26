@@ -8,9 +8,11 @@ import './styles.scss'
 const EmergencyNumbers: React.FC = () => {
     return (
         <div className='emergency-numbers p-2'>
-            <h3 className='text-uppercase'>CONTACTO DE EMERGENCIA</h3>
+            <h3 className='text-uppercase'>
+                Se han dispuesto los siguientes contactos para consultas sobre servicios municipales
+            </h3>
             <p>Se han dispuesto los siguientes contactos de emergencia (de 08:00 a 17:30 hrs)</p>
-            <div className='emergency-box '>
+            <div className='emergency-box  '>
                 <p className='text-center'>
                     <a
                         onClick={() => {
@@ -21,7 +23,7 @@ const EmergencyNumbers: React.FC = () => {
                         }}
                         href={`Tel:800100020`}
                         target='_blank'
-                        className='btn btn-block btn-outline-link text-left'
+                        className='btn btn-block btn-outline-link text-center'
                     >
                         <FontAwesomeIcon icon={faHeadset} className='health-icon' /> Call Center <b>800 100 020</b>
                     </a>
@@ -36,7 +38,7 @@ const EmergencyNumbers: React.FC = () => {
                         }}
                         href={`https://wa.me/56956478170`}
                         target='_blank'
-                        className='btn btn-block btn-outline-link text-left'
+                        className='btn btn-block btn-outline-link text-center'
                     >
                         <FontAwesomeIcon icon={faWhatsapp} className='health-icon' /> WhatsApp <b>+56956478170</b>
                     </a>
@@ -51,7 +53,7 @@ const EmergencyNumbers: React.FC = () => {
                         }}
                         href={`mailto:emergencia@rancagua.cl`}
                         target='_blank'
-                        className='btn btn-block btn-outline-link text-left'
+                        className='btn btn-block btn-outline-link text-center'
                     >
                         <FontAwesomeIcon icon={faEnvelope} className='health-icon' /> Email {' '}
                         <b>emergencia@rancagua.cl</b>
