@@ -8,7 +8,7 @@ const Unavailable: React.FC = () => {
     return (
         <div className='unavailable-services p-2'>
             <Row>
-                <Col md={12}>
+                <Col md={{ span: 8, offset: 2 }} xs={12}>
                     <h3 className='font-weight-bold'>SUSPENSIÓN DE SERVICIOS</h3>
                     <h4 className='font-weight-bold'>Suspensión Total</h4>
                     <div className='text-justify textservice pt-2'>
@@ -33,7 +33,7 @@ const Unavailable: React.FC = () => {
             </Row>
             {/* <hr /> */}
             <Row>
-                <Col md={12}>
+                <Col md={{ span: 8, offset: 2 }} xs={12}>
                     <h4 className='font-weight-bold'>Suspensíon Parcial</h4>
                     <div className='text-justify textservice pt-2'>
                         Sólo atenderán de manera presencial casos de urgencia.
@@ -51,7 +51,7 @@ const Unavailable: React.FC = () => {
             <hr />
 
             <Row>
-                <Col md={12}>
+                <Col md={{ span: 8, offset: 2 }} xs={12}>
                     <h3 className='font-weight-bold text-center'>FUNCIONAMIENTO NORMAL DE SERVICIOS</h3>
                     <ul className='lista pt-2'>
                         <li>
@@ -71,7 +71,7 @@ const Unavailable: React.FC = () => {
             </Row>
             <hr />
             <Row>
-                <Col md={12}>
+                <Col md={{ span: 8, offset: 2 }} xs={12}>
                     <h3 className='font-weight-bold text-center'>SERVICIOS DIGITALES</h3>
                     <div className='text-left textservice'>
                         De manera online se han dispuesto los siguientes servicios digitales:

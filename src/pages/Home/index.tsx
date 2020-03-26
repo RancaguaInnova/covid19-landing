@@ -63,14 +63,14 @@ const Home: React.FC = () => {
             {/* <section>
         <Map />
       </section> */}
-            <div className='comunity-section container'>
+            {/* <div className='comunity-section container'>
                 <h2>
                     <FontAwesomeIcon icon={faUsers} /> COMUNIDAD
                 </h2>
                 <section>
                     <Map />
                 </section>
-            </div>
+            </div> */}
             {/*  <Information /> */}
         </div>
     ) : (
@@ -110,9 +110,9 @@ const Home: React.FC = () => {
                 <section className='container p-4'>
                     <ServicesUnavailable />
                 </section>
-                <section className='container'>
+                {/*  <section className='container'>
                     <Services />
-                </section>
+                </section> */}
                 <section className='container'>
                     <EmergencyNumbers />
                 </section>
