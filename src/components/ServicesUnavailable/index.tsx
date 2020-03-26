@@ -207,7 +207,7 @@ const Unavailable: React.FC = () => {
                 </a>
               </span>
             </li>
-            <li>
+            {/*  <li>
               <span>Certificado de Vigencia - Organizaciones Comunitarias</span>
             </li>
             <li>
@@ -215,7 +215,7 @@ const Unavailable: React.FC = () => {
             </li>
             <li>
               <span>Certificado de Dirección de Obras</span>
-            </li>
+            </li> */}
           </ul>
         </Col>
       </Row>
