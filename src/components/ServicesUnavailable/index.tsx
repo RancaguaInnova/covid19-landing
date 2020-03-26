@@ -1,76 +1,11 @@
 import React from 'react'
 import './styles.scss'
-import ReactGA from 'react-ga'
 
-import { Modal, Container, Row, Col, Button } from 'react-bootstrap'
-import { MdLocalPhone, MdEmail } from 'react-icons/md'
-import { FaWhatsapp } from 'react-icons/fa'
+import { Row, Col } from 'react-bootstrap'
+
 const Unavailable: React.FC = () => {
   return (
     <div className="unavailable-services">
-      <Container>
-        <Row>
-          <Col md={12}>
-            La Municipalidad de Rancagua habilitó los siguientes medios de
-            contacto para consultas sobre servicios municipales:
-          </Col>
-        </Row>
-
-        <div className="message text-left">
-          <Row>
-            <Col md={12}>
-              <MdLocalPhone /> Linea 800 gratuita:{' '}
-              <a
-                onClick={() => {
-                  ReactGA.event({
-                    category: 'information-call',
-                    action: 'tel:800100020',
-                  })
-                }}
-                href="tel:800100020"
-                target="_blank"
-              >
-                800100020
-              </a>
-            </Col>
-          </Row>
-          <Row>
-            <Col md={12}>
-              <FaWhatsapp /> WhatsApp:{' '}
-              <a
-                onClick={() => {
-                  ReactGA.event({
-                    category: 'information-whatsapp',
-                    action: 'wa.me/56956478170',
-                  })
-                }}
-                href="https://wa.me/56956478170"
-                target="_blank"
-              >
-                +56956478170
-              </a>
-            </Col>
-          </Row>
-          <Row>
-            <Col md={12}>
-              <MdEmail /> Correo:{' '}
-              <a
-                onClick={() => {
-                  ReactGA.event({
-                    category: 'information-email',
-                    action: 'mailto:emergencia@rancagua.cl',
-                  })
-                }}
-                href="mailto:emergencia@rancagua.cl"
-                target="_blank"
-              >
-                emergencia@rancagua.cl
-              </a>
-            </Col>
-          </Row>
-        </div>
-      </Container>
-      <hr></hr>
       <Row>
         <Col md={12}>
           <h4>SUSPENSIÓN DE SERVICIOS</h4>
