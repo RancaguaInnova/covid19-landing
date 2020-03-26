@@ -17,129 +17,123 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSyringe, faUsers } from '@fortawesome/free-solid-svg-icons'
 
 const Home: React.FC = () => {
-  ReactGA.pageview('/')
+    ReactGA.pageview('/')
 
-  return isMobile ? (
-    <div className="home">
-      <div className="covid container">
-        {/* <h2>CORONAVIRUS</h2> */}
-        <section>
-          <Timeline />
-        </section>
-        <section>
-          <Order />
-        </section>
-        {/* <section>
+    return isMobile ? (
+        <div className='home'>
+            <div className='covid container'>
+                {/* <h2>CORONAVIRUS</h2> */}
+                <section>
+                    <Timeline />
+                </section>
+                <section>
+                    <Order />
+                </section>
+                {/* <section>
                     <Exams />
                 </section> */}
-      </div>
-      <div className="vaccination-section container">
-        <h2>
-          <FontAwesomeIcon icon={faSyringe} /> CAMPAÑA INFLUENZA
-        </h2>
-        <section>
-          <Vaccination />
-        </section>
-      </div>
-      <div className="srv container">
-        <div className="row">
-          <div className="col-3 ">
-            <img src="/assets/images/logo_red.png" className="img-fluid" />
-          </div>
-          <div className="col-9 pl-0">
-            <h2>MUNICIPALIDAD DE RANCAGUA</h2>
-          </div>
-        </div>
-        <section>
-          <ServicesUnavailable />
-        </section>
-        {/* <section>
+            </div>
+            <div className='vaccination-section container'>
+                <h2>
+                    <FontAwesomeIcon icon={faSyringe} /> CAMPAÑA INFLUENZA
+                </h2>
+                <section>
+                    <Vaccination />
+                </section>
+            </div>
+            <div className='srv container'>
+                <div className='row'>
+                    <div className='col-3 '>
+                        <img src='/assets/images/logo_red.png' className='img-fluid' />
+                    </div>
+                    <div className='col-9 pl-0'>
+                        <h2>MUNICIPALIDAD DE RANCAGUA</h2>
+                    </div>
+                </div>
+                <section>
+                    <ServicesUnavailable />
+                </section>
+                {/*  <section>
                     <Services />
                 </section> */}
-        <section>
-          <EmergencyNumbers />
-        </section>
-      </div>
-      {/* <section>
+                <section>
+                    <EmergencyNumbers />
+                </section>
+            </div>
+            {/* <section>
         <Map />
       </section> */}
-      {/* <div className='comunity-section container'>
+            <div className='comunity-section container'>
                 <h2>
                     <FontAwesomeIcon icon={faUsers} /> COMUNIDAD
                 </h2>
                 <section>
                     <Map />
                 </section>
-            </div> */}
-      {/*  <Information /> */}
-    </div>
-  ) : (
-    <div className="home">
-      <div className="covid-desktop">
-        <div className="container">
-          <div className="row">
-            <div className="offset-1 col-5">
-              <Timeline />
             </div>
-            <div className="col-5">
-              <Order />
-            </div>
-            <div className="srv ">
-              <div className="container">
-                <div className="row">
-                  <div className="offset-4 col-1 p-0">
-                    <img
-                      src="/assets/images/logo_red.png"
-                      className="img-fluid logo-rgua"
-                    />
-                  </div>
-                  <div className="col-3 pt-2">
-                    <h2>MUNICIPALIDAD DE RANCAGUA</h2>
-                  </div>
-                </div>
-              </div>
-
-              <section className="container p-4">
-                <ServicesUnavailable />
-              </section>
-
-              <section className="container p-4">
-                <EmergencyNumbers />
-              </section>
-            </div>
-            <div className="col-3 pt-2">
-              <h2>MUNICIPALIDAD DE RANCAGUA</h2>
-            </div>
-          </div>
+            {/*  <Information /> */}
         </div>
+    ) : (
+        <div className='home'>
+            <div className='covid-desktop'>
+                <section className='container'>
+                    <div className='row'>
+                        <div className='offset-1 col-5'>
+                            <Timeline />
+                        </div>
+                        <div className='col-5'>
+                            <Order />
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div className='vaccination-section'>
+                <h2>
+                    <FontAwesomeIcon icon={faSyringe} /> CAMPAÑA INFLUENZA
+                </h2>
+                <section className='container'>
+                    <Vaccination />
+                </section>
+            </div>
+            <div className='srv '>
+                <div className='container'>
+                    <div className='row'>
+                        <div className='offset-4 col-1 p-0'>
+                            <img src='/assets/images/logo_red.png' className='img-fluid logo-rgua' />
+                        </div>
+                        <div className='col-3 pt-2'>
+                            <h2>MUNICIPALIDAD DE RANCAGUA</h2>
+                        </div>
+                    </div>
+                </div>
 
-        <section className="container p-4">
-          <ServicesUnavailable />
-        </section>
-        <section className="container p-4">
-          <Services />
-        </section>
-        <section className="container p-4">
-          <EmergencyNumbers />
-        </section>
-      </div>
-      {/* <section>
+                <section className='container p-4'>
+                    <ServicesUnavailable />
+                </section>
+                <section className='container'>
+                    <Services />
+                </section>
+                <section className='container'>
+                    <EmergencyNumbers />
+                </section>
+            </div>
+            {/* <section>
                 <div className='row'>
                     <div className='offset-1 col-10'>
                         <HealthServices />
                     </div>
                 </div>
             </section> */}
-      {/* <section>
+            {/* <section>
         <div className="row">
           <div className="offset-1 col-10">
             <Map />
           </div>
         </div>
       </section> */}
-      {/*  <Information /> */}
-    </div>
-  )
+            {/*  <Information /> */}
+        </div>
+    )
 }
 
 export default Home
