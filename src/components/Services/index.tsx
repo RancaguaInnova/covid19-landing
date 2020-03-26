@@ -5,7 +5,7 @@ import { Row, Col } from 'react-bootstrap'
 const Services: React.FC = () => {
   return (
     <div className="services">
-      <h4>Servicios Diitales</h4>
+      <h3 className="text-uppercase">TRÁMITES Y SERVICIOS DISPONIBLES</h3>
     </div>
   )
 }

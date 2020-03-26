@@ -1,16 +1,20 @@
 import React from 'react'
 import { isMobile } from 'mobile-device-detect'
 import ReactGA from 'react-ga'
-
 import Timeline from 'components/Timeline'
 import Map from 'components/Map'
 import Services from 'components/Services'
 import ServicesUnavailable from 'components/ServicesUnavailable'
 import Order from 'components/Order'
 import HealthServices from 'components/HealthServices'
+import EmergencyNumbers from 'components/EmergencyNumbers'
 import Vaccination from 'components/Vaccination'
+import Exams from 'components/Exams'
 import './styles.scss'
 import Information from 'components/Information'
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSyringe, faUsers } from '@fortawesome/free-solid-svg-icons'
 
 const Home: React.FC = () => {
   ReactGA.pageview('/')
@@ -25,57 +29,104 @@ const Home: React.FC = () => {
         <section>
           <Order />
         </section>
+        {/* <section>
+                    <Exams />
+                </section> */}
       </div>
       <div className="vaccination-section container">
-        <h2>CAMPAÑA INFLUENZA</h2>
+        <h2>
+          <FontAwesomeIcon icon={faSyringe} /> CAMPAÑA INFLUENZA
+        </h2>
         <section>
           <Vaccination />
         </section>
       </div>
       <div className="srv container">
-        <h2>MUNICIPALIDAD DE RANCAGUA</h2>
-
+        <div className="row">
+          <div className="col-3 ">
+            <img src="/assets/images/logo_red.png" className="img-fluid" />
+          </div>
+          <div className="col-9 pl-0">
+            <h2>MUNICIPALIDAD DE RANCAGUA</h2>
+          </div>
+        </div>
         <section>
           <ServicesUnavailable />
         </section>
         <section>
           <Services />
         </section>
+        <section>
+          <EmergencyNumbers />
+        </section>
       </div>
       {/* <section>
         <Map />
       </section> */}
-      <div className="comunity-section container">
-        <h2>COMUNIDAD</h2>
-        <section>
-          <Map />
-        </section>
-      </div>
+      {/* <div className='comunity-section container'>
+                <h2>
+                    <FontAwesomeIcon icon={faUsers} /> COMUNIDAD
+                </h2>
+                <section>
+                    <Map />
+                </section>
+            </div> */}
       {/*  <Information /> */}
     </div>
   ) : (
     <div className="home">
-      <section>
-        <div className="row">
-          <div className="offset-1 col-5">
-            <Timeline />
+      <div className="covid-desktop">
+        <section className="container">
+          <div className="row">
+            <div className="offset-1 col-5">
+              <Timeline />
+            </div>
+            <div className="col-5">
+              <Order />
+            </div>
           </div>
-          <div className="col-5">
-            <Order />
+        </section>
+      </div>
+      <div className="vaccination-section">
+        <h2>
+          <FontAwesomeIcon icon={faSyringe} /> CAMPAÑA INFLUENZA
+        </h2>
+        <section className="container">
+          <Vaccination />
+        </section>
+      </div>
+      <div className="srv ">
+        <div className="container">
+          <div className="row">
+            <div className="offset-4 col-1 p-0">
+              <img
+                src="/assets/images/logo_red.png"
+                className="img-fluid logo-rgua"
+              />
+            </div>
+            <div className="col-3 pt-2">
+              <h2>MUNICIPALIDAD DE RANCAGUA</h2>
+            </div>
           </div>
         </div>
-      </section>
 
-      <section>
-        <Vaccination />
-      </section>
-      <section>
-        <div className="row">
-          <div className="offset-1 col-10">
-            <HealthServices />
-          </div>
-        </div>
-      </section>
+        <section className="container p-4">
+          <ServicesUnavailable />
+        </section>
+        <section className="container p-4">
+          <Services />
+        </section>
+        <section className="container p-4">
+          <EmergencyNumbers />
+        </section>
+      </div>
+      {/* <section>
+                <div className='row'>
+                    <div className='offset-1 col-10'>
+                        <HealthServices />
+                    </div>
+                </div>
+            </section> */}
       {/* <section>
         <div className="row">
           <div className="offset-1 col-10">
@@ -83,7 +134,7 @@ const Home: React.FC = () => {
           </div>
         </div>
       </section> */}
-      <Information />
+      {/*  <Information /> */}
     </div>
   )
 }

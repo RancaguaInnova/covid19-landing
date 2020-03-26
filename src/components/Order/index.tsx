@@ -104,7 +104,7 @@ const Order: React.FC = () => {
             <MydModalWithGrid show={modalShow} onHide={() => setModalShow(false)} action={action} />
             <div className='m-2 pt-4'>
                 <a
-                    className='btn btn-block btn-danger text-uppercase'
+                    className='btn btn-block btn-outline-danger text-uppercase'
                     target='_blank'
                     href='https://www.gob.cl/coronavirus/'
                 >

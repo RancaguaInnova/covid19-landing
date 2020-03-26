@@ -16,7 +16,6 @@ const Unavailable: React.FC = () => {
           </Col>
         </Row>
 
-
         <div className="message text-left">
           <Row>
             <Col md={12}>

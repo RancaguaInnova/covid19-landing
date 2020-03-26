@@ -1,17 +1,17 @@
 @import 'variables';
 
 .header {
-    text-align: left;
+    text-align: center;
     min-height: 2rem;
     /* display: flex;
     align-items: center;
     justify-content: left; */
-    background-color: white;
+    background-color: transparent;
     height: auto;
-    border-bottom: solid 1px grey;
+    width: 100%;
+   /*  border-bottom: solid 1px grey; */
     /*  margin-bottom: .5rem; */
 }
-
 .header h1 {
     /* text-align: left; */
     /* margin-top: 1rem;
