@@ -1,5 +1,6 @@
 import React from 'react'
 import './styles.scss'
+import ReactGA from 'react-ga'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import { Row, Col } from 'react-bootstrap'
@@ -80,6 +81,12 @@ const Unavailable: React.FC = () => {
                         {onlineServices.map((srv, key) => (
                             <a
                                 key={key}
+                                onClick={() => {
+                                    ReactGA.event({
+                                        category: 'digital-services',
+                                        action: srv.name
+                                    })
+                                }}
                                 href={srv.link}
                                 target='_blank'
                                 className='list-group-item list-group-item-action justify-content-center srv-item'
