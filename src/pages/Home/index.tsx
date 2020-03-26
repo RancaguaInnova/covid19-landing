@@ -53,9 +53,9 @@ const Home: React.FC = () => {
         <section>
           <ServicesUnavailable />
         </section>
-        <section>
-          <Services />
-        </section>
+        {/* <section>
+                    <Services />
+                </section> */}
         <section>
           <EmergencyNumbers />
         </section>
@@ -76,7 +76,7 @@ const Home: React.FC = () => {
   ) : (
     <div className="home">
       <div className="covid-desktop">
-        <section className="container">
+        <div className="container">
           <div className="row">
             <div className="offset-1 col-5">
               <Timeline />
@@ -84,25 +84,28 @@ const Home: React.FC = () => {
             <div className="col-5">
               <Order />
             </div>
-          </div>
-        </section>
-      </div>
-      <div className="vaccination-section">
-        <h2>
-          <FontAwesomeIcon icon={faSyringe} /> CAMPAÑA INFLUENZA
-        </h2>
-        <section className="container">
-          <Vaccination />
-        </section>
-      </div>
-      <div className="srv ">
-        <div className="container">
-          <div className="row">
-            <div className="offset-4 col-1 p-0">
-              <img
-                src="/assets/images/logo_red.png"
-                className="img-fluid logo-rgua"
-              />
+            <div className="srv ">
+              <div className="container">
+                <div className="row">
+                  <div className="offset-4 col-1 p-0">
+                    <img
+                      src="/assets/images/logo_red.png"
+                      className="img-fluid logo-rgua"
+                    />
+                  </div>
+                  <div className="col-3 pt-2">
+                    <h2>MUNICIPALIDAD DE RANCAGUA</h2>
+                  </div>
+                </div>
+              </div>
+
+              <section className="container p-4">
+                <ServicesUnavailable />
+              </section>
+
+              <section className="container p-4">
+                <EmergencyNumbers />
+              </section>
             </div>
             <div className="col-3 pt-2">
               <h2>MUNICIPALIDAD DE RANCAGUA</h2>

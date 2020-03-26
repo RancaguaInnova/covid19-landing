@@ -8,10 +8,7 @@ import './styles.scss'
 const EmergencyNumbers: React.FC = () => {
   return (
     <div className="emergency-numbers p-2">
-      <h3 className="text-uppercase">
-        Se han dispuesto los siguientes contactos para consultas sobre servicios
-        municipales
-      </h3>
+      <h3 className="text-uppercase">Consultas sobre servicios municipales</h3>
       <p>
         Se han dispuesto los siguientes contactos de emergencia (de 08:00 a
         17:30 hrs)
