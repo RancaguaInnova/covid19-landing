@@ -10,7 +10,7 @@ const Unavailable: React.FC = () => {
         <div className='unavailable-services p-2'>
             <Row>
                 <Col md={{ span: 8, offset: 2 }} xs={12}>
-                    <h3 className='font-weight-bold'>SUSPENSIÓN DE SERVICIOS</h3>
+                    <h3 className='font-weight-bold'>FUNCIONAMIENTO SERVICIOS MUNICIPALES</h3>
                     <h4 className='font-weight-bold'>Suspensión Total</h4>
                     <div className='text-justify textservice pt-2'>
                         Para reducir al máximo la concentración de personas circulando en los servicios municipales la
@@ -32,7 +32,7 @@ const Unavailable: React.FC = () => {
                     </ul>
                 </Col>
             </Row>
-            {/* <hr /> */}
+            <hr />
             <Row>
                 <Col md={{ span: 8, offset: 2 }} xs={12}>
                     <h4 className='font-weight-bold'>Suspensíon Parcial</h4>
@@ -53,7 +53,7 @@ const Unavailable: React.FC = () => {
 
             <Row>
                 <Col md={{ span: 8, offset: 2 }} xs={12}>
-                    <h3 className='font-weight-bold text-center'>FUNCIONAMIENTO NORMAL DE SERVICIOS</h3>
+                    <h4 className='font-weight-bold text-center'>Funcionamiento Normal</h4>
                     <ul className='lista pt-2'>
                         <li>
                             <span>Entrega de agua rural</span>
@@ -74,7 +74,7 @@ const Unavailable: React.FC = () => {
             <Row>
                 <Col md={{ span: 8, offset: 2 }} xs={12}>
                     <h3 className='font-weight-bold text-center'>SERVICIOS DIGITALES</h3>
-                    <div className='text-left textservice'>
+                    <div className='text-justify textservice'>
                         De manera online se han dispuesto los siguientes servicios digitales:
                     </div>
                     <ul className='list-group pt-4 text-left'>
@@ -109,10 +109,10 @@ const onlineServices = [
         link: 'http://pago.smc.cl/pagopcvv2/muni/RANCAGUA.aspx',
         name: 'Pago de Permisos de Circulación (PCV)'
     },
-    {
+    /*  {
         link: 'http://appl.smc.cl/PCV/ConsultaRMNP/frmCalculoPCV.aspx?COMUNA:RANCAGUA',
         name: 'Consultar valor PCV'
-    },
+    }, */
     {
         link: 'http://appl.smc.cl/pagopc/muni/rancagua.aspx',
         name: 'Pago Patentes Comerciales'
