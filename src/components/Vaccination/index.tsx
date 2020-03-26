@@ -40,7 +40,7 @@ const Vaccination: React.FC = () => {
         <div className={`vaccination ${isMobile ? '' : 'row'}`}>
             <div className={isMobile ? '' : 'offset-1 col-5'}>
                 <h3 className='pb-2 text-uppercase'>Campaña Influenza 2020</h3>
-                <h5>¿Quiénes deben vacunarse contra la influenza?</h5>
+                <h5 className='subtitle'>¿Quiénes deben vacunarse contra la influenza?</h5>
 
                 <div className='container-fluid'>
                     <div className='row'>
@@ -86,7 +86,7 @@ const Vaccination: React.FC = () => {
                 </div>
             </div>
             <div className={isMobile ? '' : 'col-5'}>
-                <h5 className='pt-2 pb-2 '>¿Dónde vacunarse?</h5>
+                <h5 className='pt-2 pb-2 subtitle'>¿Dónde vacunarse?</h5>
 
                 {loading && <Loading />}
 

@@ -4,7 +4,7 @@ import './styles.scss'
 const Services: React.FC = () => {
     return (
         <div className='services'>
-            <h4>TRÁMITES Y SERVICIOS DISPONIBLES</h4>
+            <h3 className='text-uppercase'>TRÁMITES Y SERVICIOS DISPONIBLES</h3>
         </div>
     )
 }
