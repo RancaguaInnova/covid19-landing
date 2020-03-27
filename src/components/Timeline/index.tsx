@@ -47,7 +47,7 @@ const Timeline: React.FC = () => {
                         {_sortBy(news.filter((n, idx) => n.active && idx < visible), (n: any) => {
                             return now.diff(n.date.toDate())
                         }).map((n: any, k) => {
-                            return n.urlExterna.trim() !== '' ? (
+                            return n.urlExterna && n.urlExterna.trim() !== '' ? (
                                 <a href={n.urlExterna} key={k} target='_blank'>
                                     <Card card={n} />
                                 </a>
