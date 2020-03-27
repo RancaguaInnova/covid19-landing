@@ -1,7 +1,7 @@
 import React from 'react'
 import './styles.scss'
-import HealthServicesExams from './healthServicesExams'
 import ReactGA from 'react-ga'
+import HealthServicesExams from './healthServicesExams'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 const Exams: React.FC = () => {
@@ -17,10 +17,10 @@ const Exams: React.FC = () => {
         />
       </div>
       <div>
-        <h5 className="pt-2 pb-2 subtitle">
-          Lugares que hacen el examen de Coronavirus?
-        </h5>
-        <HealthServicesExams></HealthServicesExams>
+        <h4 className="pt-2 pb-2 subtitle">
+          ¿Dónde realizan el examen de Coronavirus?
+        </h4>
+        <HealthServicesExams />
       </div>
 
       <div>

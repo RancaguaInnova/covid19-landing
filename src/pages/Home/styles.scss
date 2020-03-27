@@ -25,7 +25,7 @@ section h3 {
 }
 
 .covid {
-    background-image: linear-gradient(white, $bodyBackground, $mainColor);
+    background-image: linear-gradient($secondaryColor, $mainColor, $bodyBackground, white);
     padding-top: .2rem;
     padding-bottom: 1rem;
 }
@@ -37,7 +37,7 @@ section h3 {
 }
 
 .covid-desktop {
-    background-image: linear-gradient($bodyBackground, $mainColor);
+    background-image: linear-gradient($secondaryColor, $bodyBackground, white);
     padding: 1rem 1rem;
 }
 
@@ -48,7 +48,7 @@ section h3 {
 }
 
 .vaccination-section {
-    background-image: linear-gradient($mainColor, $bodyBackground, white);
+    background-image: linear-gradient(white, $bodyBackground, $mainColor);
     /* border-top: outset white 1px; */
     /*    padding-top: 1rem; */
     padding-bottom: 1rem;
@@ -56,13 +56,13 @@ section h3 {
 
 .vaccination-section h2 {
     font-size: 1.7rem;
-    color: white;
+    color: $mainColor;
     font-weight: bold;
     padding-bottom: 1rem;
 }
 
 .srv {
-    background-image: linear-gradient(white, $bodyBackground, $mainColor);
+    background-image: linear-gradient($mainColor, $bodyBackground, white);
     /* border-top: outset $mainColor 1px; */
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -74,13 +74,13 @@ section h3 {
 
 .srv h2 {
     font-size: 1.7rem;
-    color: $mainColor;
+    color: white;
     font-weight: bold;
     padding-bottom: 1rem;
 }
 
 .comunity-section {
-    background-image: linear-gradient($mainColor, $bodyBackground);
+    background-image: linear-gradient(white, $bodyBackground, $mainColor, $secondaryColor );
     /* border-top: outset white 1px; */
     /* padding-top: 1rem; */
     padding-bottom: 1rem;
@@ -88,7 +88,7 @@ section h3 {
 
 .comunity-section h2 {
     font-size: 1.7rem;
-    color: white;
+    color: $mainColor;
     font-weight: bold;
     padding-bottom: 1rem;
 }
