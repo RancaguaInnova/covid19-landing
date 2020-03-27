@@ -7,7 +7,10 @@ const Map: React.FC = () => {
     <div className="map">
       <h3 className="text-uppercase">Mapa de Contingencia</h3>
       <p className="info-txt">
-        Información sobre puntos de interés reelevantes para la ciudadanía.
+        En el siguiente mapa podrás encontrar información actualizada sobre los
+        horarios de funcionamiento de farmacias, supermercados, centros de salud
+        y emprendedores que entreguen servicios de alimentación y necesidades
+        básicas.
       </p>
       <div className="map-box">
         <iframe
