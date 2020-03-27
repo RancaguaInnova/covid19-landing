@@ -1,0 +1,17 @@
+@import 'variables';
+
+.list-group-item h5 {
+    width: 100%;
+}
+
+.health-item {
+    margin-bottom: .2rem;
+}
+
+.health-item h5 {
+    font-size: 1rem;
+}
+
+.health-icon {
+    color: $mainColor;
+}
