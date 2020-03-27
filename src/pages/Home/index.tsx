@@ -87,8 +87,10 @@ const Home: React.FC = () => {
                             <Order />
                         </div>
                     </div>
+                </section>
+                <section className='container'>
                     <div className='row'>
-                        <div className='col-10'>
+                        <div className='offset-1 col-10'>
                             <Exams />
                         </div>
                     </div>
@@ -131,15 +133,18 @@ const Home: React.FC = () => {
                     </div>
                 </div>
             </section> */}
-            {
-                <section>
+            <div className='comunity-section'>
+                <h2>
+                    <FontAwesomeIcon icon={faUsers} /> COMUNIDAD
+                </h2>
+                <section className=' container'>
                     <div className='row'>
                         <div className='offset-1 col-10'>
                             <Map />
                         </div>
                     </div>
                 </section>
-            }
+            </div>
             {/*  <Information /> */}
         </div>
     )
