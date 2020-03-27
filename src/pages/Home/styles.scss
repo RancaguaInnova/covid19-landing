@@ -25,7 +25,7 @@ section h3 {
 }
 
 .covid {
-    background-image: linear-gradient($secondaryColor, $mainColor, $bodyBackground,white, $bodyBackground,$mainColor, $secondaryColor);
+    background-image: linear-gradient($secondaryColor, $mainColor,  #770222,#5a1425, #770222,$mainColor, $secondaryColor);
     padding-top: .2rem;
     padding-bottom: 1rem;
 }
@@ -37,7 +37,7 @@ section h3 {
 }
 
 .covid-desktop {
-    background-image: linear-gradient($secondaryColor, $mainColor, $bodyBackground,white, $bodyBackground,$mainColor, $secondaryColor);
+    background-image: linear-gradient($secondaryColor, $mainColor,  #770222,#5a1425, #770222,$mainColor, $secondaryColor);
     padding: 1rem 1rem;
 }
 
@@ -48,7 +48,7 @@ section h3 {
 }
 
 .vaccination-section {
-    background-image: linear-gradient($secondaryColor, $mainColor, $bodyBackground,white, $bodyBackground,$mainColor, $secondaryColor);
+    background-image: linear-gradient($secondaryColor, $mainColor,  #770222,#5a1425, #770222,$mainColor, $secondaryColor);
     /* border-top: outset white 1px; */
     /*    padding-top: 1rem; */
     padding-bottom: 1rem;
@@ -62,7 +62,7 @@ section h3 {
 }
 
 .srv {
-    background-image: linear-gradient($secondaryColor, $mainColor, $bodyBackground,white, $bodyBackground,$mainColor, $secondaryColor);
+    background-image: linear-gradient($secondaryColor, $mainColor,  #770222,#5a1425, #770222,$mainColor, $secondaryColor);
     /* border-top: outset $mainColor 1px; */
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -80,7 +80,7 @@ section h3 {
 }
 
 .comunity-section {
-    background-image: linear-gradient($secondaryColor, $mainColor, $bodyBackground,white, $bodyBackground,$mainColor, $secondaryColor );
+    background-image: linear-gradient($secondaryColor, $mainColor, #770222,#5a1425, #770222,$mainColor, $secondaryColor );
     /* border-top: outset white 1px; */
     /* padding-top: 1rem; */
     padding-bottom: 1rem;
