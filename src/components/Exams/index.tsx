@@ -13,7 +13,7 @@ const Exams: React.FC = () => {
       <div>
         {' '}
         <img
-          src="/assets/images/seccion_coronavirus-01.jpg"
+          src="/assets/images/seccion_coronavirus-01.png"
           className="img-fluid"
           alt=""
         />
@@ -33,7 +33,7 @@ const Exams: React.FC = () => {
           </h4>
         </div>{' '}
         <img
-          src="/assets/images/seccion_coronavirus-02.jpg"
+          src="/assets/images/seccion_coronavirus-02.png"
           className="img-fluid"
           alt=""
         />
