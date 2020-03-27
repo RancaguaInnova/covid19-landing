@@ -29,9 +29,9 @@ const Home: React.FC = () => {
                 <section>
                     <Order />
                 </section>
-                {/* <section>
+                <section>
                     <Exams />
-                </section> */}
+                </section>
             </div>
             <div className='vaccination-section container'>
                 <h2>
@@ -63,14 +63,16 @@ const Home: React.FC = () => {
             {/* <section>
         <Map />
       </section> */}
-            {/* <div className='comunity-section container'>
-                <h2>
-                    <FontAwesomeIcon icon={faUsers} /> COMUNIDAD
-                </h2>
-                <section>
-                    <Map />
-                </section>
-            </div> */}
+            {
+                <div className='comunity-section container'>
+                    <h2>
+                        <FontAwesomeIcon icon={faUsers} /> COMUNIDAD
+                    </h2>
+                    <section>
+                        <Map />
+                    </section>
+                </div>
+            }
             {/*  <Information /> */}
         </div>
     ) : (
@@ -83,6 +85,11 @@ const Home: React.FC = () => {
                         </div>
                         <div className='col-5'>
                             <Order />
+                        </div>
+                    </div>
+                    <div className='row'>
+                        <div className='col-10'>
+                            <Exams />
                         </div>
                     </div>
                 </section>
@@ -124,13 +131,15 @@ const Home: React.FC = () => {
                     </div>
                 </div>
             </section> */}
-            {/* <section>
-        <div className="row">
-          <div className="offset-1 col-10">
-            <Map />
-          </div>
-        </div>
-      </section> */}
+            {
+                <section>
+                    <div className='row'>
+                        <div className='offset-1 col-10'>
+                            <Map />
+                        </div>
+                    </div>
+                </section>
+            }
             {/*  <Information /> */}
         </div>
     )

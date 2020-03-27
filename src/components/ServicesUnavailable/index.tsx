@@ -133,10 +133,10 @@ const onlineServices = [
         link: 'https://webviews.smartrancagua.com/integration/parking',
         name: 'Estacionamientos públicos disponibles en vivo'
     },
-    {
+    /*  {
         link: 'http://www.rancagua.cl/servicios/educacion',
         name: 'Libreta Educativa Colegios Municipales'
-    },
+    }, */
     {
         link: 'http://www.rancagua.cl/reportes/luminarias',
         name: 'Reporte de luminarias en mal estado'

@@ -19,7 +19,11 @@ const Map: React.FC = () => {
 
             <div className='entrepreneur-box mt-2'>
                 <p className='text-center'>Si quieres que tu negocio aparezca en este mapa </p>
-                <a className='btn btn-danger btn-block' href='https://forms.gle/t7xGKcJZx9XfMmDw8' target='_black'>
+                <a
+                    className='btn btn-outline-danger btn-block'
+                    href='https://forms.gle/t7xGKcJZx9XfMmDw8'
+                    target='_black'
+                >
                     INSCRIBETE AQUÍ
                 </a>
             </div>
