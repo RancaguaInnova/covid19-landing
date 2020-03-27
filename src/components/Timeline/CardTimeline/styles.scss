@@ -11,7 +11,7 @@
 
 .card-timeline .card {
     /* background-color: $mainColor; */
-    box-shadow: 0 0 4px $secondaryColor;
+    box-shadow: 0 0 2px $secondaryColor;
     margin: .2rem 0rem;
     color: $mainColor;
     /* padding: 1rem; */
@@ -41,7 +41,7 @@
 }
 
 .card-timeline .card-body h5 {
-    font-size: .8rem;
+    font-size: .9rem;
 }
 
 .card-timeline .card-body .hour {
@@ -54,7 +54,7 @@
 }
 
 .card-timeline .card-body p {
-    font-size: .7rem;
+    font-size: .8rem;
 }
 
 .card-timeline .card-link {
