@@ -25,8 +25,8 @@ const Map: React.FC = () => {
 
       <div className="entrepreneur-box mt-2">
         <p className="text-center font-weight-bold">
-          Si quieres que tu negocio aparece en el siguiente mapa inscríbete en
-          el siguiente formulario:{' '}
+          Si quieres que tu negocio aparezca en el mapa inscríbete en el
+          siguiente formulario:{' '}
         </p>
         <a
           className="btn btn-outline-danger btn-block"
