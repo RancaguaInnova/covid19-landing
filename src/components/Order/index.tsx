@@ -4,7 +4,8 @@ import app from 'providers/firebase'
 import { collectionData } from 'rxfire/firestore'
 import _isEqual from 'lodash/isEqual'
 import _sortBy from 'lodash/sortBy'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import Loading from 'components/Loading'
 /* import { FirestoreCollection } from 'react-firestore' */
 import { Modal, Container, Row, Col, Button } from 'react-bootstrap'
@@ -79,13 +80,13 @@ const Order: React.FC = () => {
             {loading ? (
                 <Loading />
             ) : (
-                <div className='m-2 text-left order-list'>
-                    {_sortBy(actions.filter((a: any) => a.active), (a) => a.date.toDate())
-                        .reverse()
-                        .map((action, key) => (
-                            <p key={key}>
-                                <button
-                                    className='btn btn-block btn-outline-secondary text-left'
+                <div className='m-2 text-left '>
+                    <ul className='list-group pt-4 text-left'>
+                        {_sortBy(actions.filter((a: any) => a.active), (a) => a.date.toDate())
+                            .reverse()
+                            .map((action, key) => (
+                                <li
+                                    key={key}
                                     onClick={() => {
                                         ReactGA.event({
                                             category: 'Recomendaciones',
@@ -93,11 +94,18 @@ const Order: React.FC = () => {
                                         })
                                         showModal(action)
                                     }}
+                                    className='list-group-item list-group-item-action justify-content-center srv-item'
                                 >
-                                    {action.description}
-                                </button>
-                            </p>
-                        ))}
+                                    <FontAwesomeIcon
+                                        icon={faChevronRight}
+                                        className='float-right justify-content-center'
+                                    />
+                                    <span className='pr-4 w-100'>
+                                        {action && action.description ? action.description.replace('[+] ', '') : ''}
+                                    </span>
+                                </li>
+                            ))}
+                    </ul>
                 </div>
             )}
 
