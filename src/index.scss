@@ -19,7 +19,8 @@ body {
   font-family: 'Futura';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color:$bodyBackground;
+  background-color:$secondaryColor;
+   /* background-image: linear-gradient(to right, $secondaryColor, $secondaryColor, #343434, #161616); */
 }
 
 code {

@@ -44,7 +44,7 @@ const Home: React.FC = () => {
             <div className='srv container'>
                 <div className='row'>
                     <div className='col-3 '>
-                        <img src='/assets/images/logo_red.png' className='img-fluid' />
+                        <img src='/assets/images/logo_white.png' className='img-fluid' />
                     </div>
                     <div className='col-9 pl-0'>
                         <h2>MUNICIPALIDAD DE RANCAGUA</h2>
@@ -108,7 +108,7 @@ const Home: React.FC = () => {
                 <div className='container'>
                     <div className='row'>
                         <div className='offset-4 col-1 p-0'>
-                            <img src='/assets/images/logo_red.png' className='img-fluid logo-rgua' />
+                            <img src='/assets/images/logo_white.png' className='img-fluid logo-rgua' />
                         </div>
                         <div className='col-3 pt-2'>
                             <h2>MUNICIPALIDAD DE RANCAGUA</h2>
