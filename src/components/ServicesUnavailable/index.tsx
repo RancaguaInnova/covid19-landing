@@ -65,7 +65,7 @@ const Unavailable: React.FC = () => {
                             <span>Cuadrillas de emergencias</span>
                         </li>
                         <li>
-                            <span>Retiro de basuras</span>
+                            <span>Retiro de basura domiciliaria (Frecuencia Reducida, <a href="#mapaContingencia">ver mapa de contingencia</a>)</span>
                         </li>
                     </ul>
                 </Col>
