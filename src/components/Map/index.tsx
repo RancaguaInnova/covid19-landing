@@ -18,6 +18,8 @@ const Map: React.FC = () => {
           style={{ border: '0' }}
           src="https://www.google.com/maps/d/embed?mid=1AHqm7TsKrxWS-qPbevm45XsmBBwRAzOM"
           allowFullScreen
+          title="Mapa de contingencia"
+         
         />
       </div>
 

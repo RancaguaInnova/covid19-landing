@@ -1,0 +1,18 @@
+@import 'variables';
+
+/* Darker background on mouse-over */
+.btn:hover {
+  border: none;
+}
+
+.Directory-title {
+  background-color: $mainColor;
+  color: #fff;
+}
+
+.Directory-title .close {
+  color: #fff;
+}
+.Directory {
+  display: inline-flex;
+}
