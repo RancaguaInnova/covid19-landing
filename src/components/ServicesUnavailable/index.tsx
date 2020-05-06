@@ -76,12 +76,12 @@ const Unavailable: React.FC = () => {
                         <li>
                             <span>Cuadrillas de emergencias</span>
                         </li>
-                        {/* <li>
-              <span>
-                Retiro de basura domiciliaria (Frecuencia Reducida,{" "}
-                <a href="#mapaContingencia">ver mapa de contingencia</a>)
-              </span>
-            </li> */}
+                        <li>
+                            <span>
+                                Retiro de basura domiciliaria (Frecuencia Reducida,{' '}
+                                <a href='#mapaContingencia'>ver mapa de contingencia</a>)
+                            </span>
+                        </li>
                     </ul>
                 </Col>
             </Row>
@@ -141,10 +141,10 @@ const onlineServices = [
         link: 'https://webviews.smartrancagua.com/view/information/directoryView/?_id:n5sAdCgr9hzqLWohz',
         name: 'Información directorio municipal'
     },
-    {
+    /*  {
         link: 'http://www.rancagua.cl/servicios/recoleccionbasura',
         name: 'Recorrido en vivo camiones de Recolección de basura'
-    },
+    }, */
     {
         link: 'https://webviews.smartrancagua.com/integration/parking',
         name: 'Estacionamientos públicos disponibles en vivo'
