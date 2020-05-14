@@ -23,6 +23,10 @@ const Exams: React.FC = () => {
           ¿En qué servicios de urgencia realizan el examen del COVID-19 en
           Rancagua?
         </h4>
+        <div className="alert alert-warning" role="alert">
+        <p>*Realización de examen PCR en todos los CESFAM de Rancagua.*</p>
+<p>Para la realización del examen primero se debe pasar por un protocolo de clasificación del estado del paciente (Triage) el cual determina si es necesario realizar el test.</p>
+</div>
         <HealthServicesExams />
       </div>
 
