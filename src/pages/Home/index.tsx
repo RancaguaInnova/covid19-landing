@@ -12,7 +12,7 @@ import Vaccination from 'components/Vaccination'
 import Exams from 'components/Exams'
 import './styles.scss'
 import Information from 'components/Information'
-
+import Statistics from 'components/Statistics'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSyringe, faUsers } from '@fortawesome/free-solid-svg-icons'
 
@@ -27,12 +27,16 @@ const Home: React.FC = () => {
                     <Timeline />
                 </section>
                 <section>
+                    <Statistics />
+                </section>
+                <section>
                     <Order />
                 </section>
                 <section>
                     <Exams />
                 </section>
             </div>
+
             <div className='vaccination-section container'>
                 <h2>
                     <FontAwesomeIcon icon={faSyringe} /> CAMPAÑA INFLUENZA
@@ -87,6 +91,10 @@ const Home: React.FC = () => {
                             <Order />
                         </div>
                     </div>
+                </section>
+
+                <section className='container'>
+                    <Statistics />
                 </section>
                 <section className='container'>
                     <div className='row'>
