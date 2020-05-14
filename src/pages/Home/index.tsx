@@ -24,11 +24,12 @@ const Home: React.FC = () => {
             <div className='covid container'>
                 {/* <h2>CORONAVIRUS</h2> */}
                 <section>
-                    <Timeline />
-                </section>
-                <section>
                     <Statistics />
                 </section>
+                <section>
+                    <Timeline />
+                </section>
+
                 <section>
                     <Order />
                 </section>
@@ -83,6 +84,9 @@ const Home: React.FC = () => {
         <div className='home'>
             <div className='covid-desktop'>
                 <section className='container'>
+                    <Statistics />
+                </section>
+                <section className='container'>
                     <div className='row'>
                         <div className='offset-1 col-5'>
                             <Timeline />
@@ -93,9 +97,6 @@ const Home: React.FC = () => {
                     </div>
                 </section>
 
-                <section className='container'>
-                    <Statistics />
-                </section>
                 <section className='container'>
                     <div className='row'>
                         <div className='offset-1 col-10'>
