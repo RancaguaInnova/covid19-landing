@@ -22,7 +22,7 @@ const Unavailable: React.FC = () => {
                         Para reducir al máximo la concentración de personas circulando en los servicios municipales la
                         Ilustre Municipalidad de Rancagua ha dispuesto que los siguientes servicio dejen de funcionar de
                         manera presencial ({' '}
-                        <a href='javascript:void(0)' onClick={showModal}>
+                        <a href='#' onClick={showModal}>
                             Ver directorio de funcionarios municipales{' '}
                         </a>
                         ):

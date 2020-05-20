@@ -3,7 +3,7 @@ import './styles.scss'
 import ReactGA from 'react-ga'
 import HealthServicesExams from './healthServicesExams'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronRight,faExclamationTriangle } from '@fortawesome/free-solid-svg-icons'
+import { faChevronRight, faExclamationTriangle } from '@fortawesome/free-solid-svg-icons'
 
 const Exams: React.FC = () => {
   return (
@@ -21,15 +21,15 @@ const Exams: React.FC = () => {
       </div>
       <div>
         <h4 className="pt-2 pb-2 subtitle">
-        ¿En qué Centros de Salud se realiza el examen para detectar el COVID-19 en Rancagua?
+          ¿En qué Centros de Salud se realiza el examen para detectar el COVID-19 en Rancagua?
         </h4>
         <div className="alert alert-warning" role="alert">
-        <p> <FontAwesomeIcon
-              icon={faExclamationTriangle}
-              className="float-left justify-content-center"
-            />El examen PCR se puede realizar en cualquier CESFAM de la comuna de Rancagua, pero primero se debe pasar por un protocolo de clasificación del estado del paciente (Triage) el cual determina si es necesario realizar el test.
+          <p> <FontAwesomeIcon
+            icon={faExclamationTriangle}
+            className="float-left justify-content-center"
+          />El examen PCR se puede realizar en cualquier CESFAM de la comuna de Rancagua, pero primero se debe pasar por un protocolo de clasificación del estado del paciente (Triage) el cual determina si es necesario realizar el test.
         </p> <p>También se puede realizar el examen PCR en los siguientes lugares:</p>
-</div>
+        </div>
         <HealthServicesExams />
         <p className='last-update'>*Última actualización de Centros de Salud que realizan examen de COVID-19  15 Mayo 2020 12:00hrs</p>
 
@@ -53,7 +53,7 @@ const Exams: React.FC = () => {
         </h4>
         <ul className="list-group pt-4 text-left">
           <a
-            key={1}
+            key={100}
             onClick={() => {
               ReactGA.event({
                 category: 'HealthServicesExams',
