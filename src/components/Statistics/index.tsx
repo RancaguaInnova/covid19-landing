@@ -35,7 +35,7 @@ const Statistic: React.FC = () => {
                     <div key={index}>
                         <p className='last-update'>Última actualización {new Date(item.date.seconds * 1000).toLocaleString()} hrs</p>
                         <hr />
-                        {item.urlVideo && item.urlVideo != '' ? (
+                        {item.urlVideo && item.urlVideo !== '' ? (
                             <div className='row'>
                                 <div className='col-md-12 col-xs-12'>
                                 <div   className='player-wrapper'>
@@ -59,12 +59,12 @@ const Statistic: React.FC = () => {
 
 
                         <div className='row'>
-                            {item.covidMap && item.covidMap.src && item.covidMap.src != '' ? (
+                            {item.covidMap && item.covidMap.src && item.covidMap.src !== '' ? (
                                 <div className='col-md-6 col-xs-12'>
                                     <img className='img-fluid' src={item.covidMap.src} />
                                 </div>
                             ) : null}
-                            {item.covidGraph && item.covidGraph.src && item.covidGraph.src != '' ? (
+                            {item.covidGraph && item.covidGraph.src && item.covidGraph.src !== '' ? (
                                 <div className='col-md-6 col-xs-12'>
                                     <img className='img-fluid mt-2' src={item.covidGraph.src} />
                                 </div>
