@@ -33,7 +33,7 @@
         "react-firestore": "^1.0.1",
         "react-ga": "^2.7.0",
         "react-icons": "^3.9.0",
-        "react-player": "^1.15.2",
+        "react-player": "^2.1.0",
         "react-router-dom": "^5.1.2",
         "react-scripts": "3.2.0",
         "rxfire": "^3.10.0",
