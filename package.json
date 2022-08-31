@@ -22,7 +22,7 @@
         "firebase": "^7.11.0",
         "lodash": "^4.17.19",
         "mobile-device-detect": "^0.3.3",
-        "moment-timezone": "^0.5.28",
+        "moment-timezone": "^0.5.35",
         "node-sass": "^4.13.1",
         "npm": "^6.14.3",
         "push-fcm-plugin": "^0.0.2",
